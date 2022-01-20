@@ -10,9 +10,6 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="7607"/>
  </document>
- <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
-  <entry key="gedit-position" value="0"/>
- </document>
  <document uri="file:///home/thunderthief/Downloads/Documents/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642670263269">
   <entry key="gedit-position" value="0"/>
  </document>
@@ -32,6 +29,9 @@
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/picom/picom.conf.bak" atime="1642669734636">
+  <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/input.conf" atime="1642671485379">
@@ -91,6 +91,11 @@
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="2387"/>
+ </document>
+ <document uri="file:///home/thunderthief/.config/openbox/autostart" atime="1642693658267">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="313"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/dunst/dunstrc" atime="1642147260011">
   <entry key="gedit-encoding" value="UTF-8"/>
