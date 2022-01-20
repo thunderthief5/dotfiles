@@ -44,7 +44,4 @@ Start it by putting `/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1` 
 `xsetroot -cursor_name left_ptr` Sets your cursor right.  
 `xrdb ~/.Xresources` If you are using xterm or rxvt-unicode, it loads their config on startup.  
 
-These are the packages I install on my every tiling WM setup. They are all lightweight and they add quite a lot of functionality and ease of use to the system.
-# Title
-
-## Text
+These are the packages I install on my every tiling WM setup. They are all lightweight and they add quite a lot of functionality and ease of use to the system.  
