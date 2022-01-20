@@ -23,7 +23,7 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 **Text Editor:** vim, neovim, gedit  
 **Terminal Emulator:** gnome-terminal, rxvt-unicode, xterm, alacritty  
 **Shell:** bash, zsh, fish  
-**Shell prompt:** starship
+**Shell prompt:** starship  
 **Notification daemon:** dunst  
 **Dock:** plank  
 **Bar:** polybar  
