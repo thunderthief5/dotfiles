@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+#Exec=paplay /home/thunderthief/.local/share/sounds/Startup-imac.wav
+Exec=ffplay -nodisp -autoexit -loglevel quiet /home/thunderthief/.local/share/sounds/Startup-XboxOne.mp3
+Hidden=false
+NoDisplay=false
+Name[en_US]=login-sound
+Name=login-sound
+Comment[en_US]=login-sound
+Comment=login-sound
+X-GNOME-Autostart-Delay=0
+X-GNOME-Autostart-enabled=true

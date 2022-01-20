@@ -1,0 +1,40 @@
+
+# █▀ ▀█▀ ▄▀█ █▀█ █▀ █░█ █ █▀█
+# ▄█ ░█░ █▀█ █▀▄ ▄█ █▀█ █ █▀▀
+
+[line_break]
+disabled = false  #separates the prompt into two lines
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+#success_symbol = "[\uf053\uf054\uf053](bold green)"
+#error_symbol   = "[\uf054\uf053](bold red)"
+#vicmd_symbol   = "[\ue62b](bold blue)"
+
+success_symbol = "[+](bold green)"
+error_symbol   = "[x](bold red)"
+vicmd_symbol   = "[^](bold blue)"
+
+[hostname]
+ssh_only = false
+format   = "on [$hostname](bold italic red) "
+trim_at  = ".local"
+disabled = true
+
+[username]
+style_user  = "bold italic cyan"
+style_root  = "bold italic red"
+format      = "[$user]($style) "
+disabled    = true
+show_always = true
+
+[time]
+disabled    = false
+format      = '[\[$time\]](bold cyan) '
+time_format = "%H:%M"
+
+[directory]
+format            = "[$path ](bold blue)[$read_only](bold red)"
+read_only         = "  "
+read_only_style   = "red"
+truncation_symbol = "…/"

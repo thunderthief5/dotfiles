@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Launchpad
+Comment=Shows applications
+Exec=xdotool key super+a
+#Exec=dbus-send --session --type=method_call --dest=org.gnome.Shell /org/gnome/Shell org.gnome.Shell.Eval string:'Main.shellDBusService.ShowApplications();'
+#Path=/home/thunderthief/.local/bin/
+Icon=~/.icons/wallpaper-wizard-2.png
+Terminal=false

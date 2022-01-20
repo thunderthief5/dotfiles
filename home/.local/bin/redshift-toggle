@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+while getopts iu option
+   do
+   case "${option}" in
+      i) notify-send --icon=redshift 'Redhshift is ON' && redshift -l 17.68009:83.20161 -t 3700:3700;;
+      u) pkill redshift && notify-send --icon=redshift 'Redshift is OFF';;
+   esac
+done
