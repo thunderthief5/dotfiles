@@ -10,9 +10,6 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="7607"/>
  </document>
- <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
-  <entry key="gedit-position" value="0"/>
- </document>
  <document uri="file:///home/thunderthief/Downloads/Documents/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642670263269">
   <entry key="gedit-position" value="0"/>
  </document>
@@ -34,6 +31,9 @@
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/picom/picom.conf.bak" atime="1642669734636">
   <entry key="gedit-position" value="0"/>
  </document>
+ <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/input.conf" atime="1642671485379">
   <entry key="gedit-position" value="0"/>
  </document>
@@ -42,10 +42,10 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="1505"/>
  </document>
- <document uri="file:///home/thunderthief/dotfiles/README.md" atime="1642681453643">
+ <document uri="file:///home/thunderthief/dotfiles/README.md" atime="1642689228234">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
-  <entry key="gedit-position" value="2356"/>
+  <entry key="gedit-position" value="1016"/>
  </document>
  <document uri="file:///home/thunderthief/.config/i3/New&#x25;20Text&#x25;20Document" atime="1642412487972">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -107,6 +107,11 @@
  </document>
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/rc&#x25;20&#x28;stable&#x25;7D.xml" atime="1642669704030">
   <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="file:///home/thunderthief/dotfiles/Tiling&#x25;20WM-&#x25;20Things&#x25;20to&#x25;20do.md" atime="1642689228118">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="1"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/scripts/recent.lua" atime="1642671884637">
   <entry key="gedit-encoding" value="UTF-8"/>
