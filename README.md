@@ -68,7 +68,7 @@ Its just not an app launcher. It does quite a lot of other things too.
 Polkit is used for controlling system-wide privileges. Helps you mount internal partitions etc. 
 Start it by putting `/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1` in your autostart scripts. The path may change depending on your distro.  
 
-**Misc startup commands:** 
+**Misc startup commands:**  
 `xsetroot -cursor_name left_ptr` Sets your cursor right.  
-'xrdb ~/.Xresources' If you are using xterm or rxvt-unicode, it loads their config on startup.  
+`xrdb ~/.Xresources` If you are using xterm or rxvt-unicode, it loads their config on startup.  
 
