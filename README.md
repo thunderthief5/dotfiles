@@ -1,6 +1,6 @@
 # ThunderThief's Dotfiles
 
-## What do I use to organize dotfiles?
+## What do I use to organize my dotfiles?
 
 I use `stow` (GNU Stow). It is available on almost every distro.
 
@@ -26,5 +26,6 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 **Notification daemon:** dunst  
 **Dock:** Plank  
 **Bar:** Polybar  
-**App launcher:** Rofi  
+**App launcher:** Rofi 
+**Media Player:** mpv  
 
