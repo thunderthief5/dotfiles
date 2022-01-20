@@ -53,14 +53,14 @@ added_style = "bold blue"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
-conflicted = "conflicted"
-ahead = "ahead"
-behind = "behind"
-diverged = "diverged"
-up_to_date = "✓"
-untracked = "untracked"
-stashed = "stashed"
-modified = "modified"
-staged = '[++\($count\)](green)'
-renamed = "renamed"
-deleted = "deleted"
+conflicted = "conflicted "
+ahead = "ahead "
+behind = "behind "
+diverged = "diverged "
+up_to_date = "✓ "
+untracked = "untracked "
+stashed = "stashed "
+modified = "modified "
+staged = '[++ \($count\) ](green)'
+renamed = "renamed "
+deleted = "deleted "
