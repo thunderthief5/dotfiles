@@ -45,15 +45,14 @@ Gives you a wifi menu and a tray applet to configure your networks.
 **Power Manager:** xfce4-power-manager  
 For managing power and sleep settings, lid actions and backlight settings if you are using a laptop  
 
-**Settings Manager:** xfce4-settings
+**Settings Manager:** xfce4-settings   
 You can use it to configure the themes, fonts, display settings, mouse and touchpad settings etc. Start it along with your wm using `xfsettingsd` command.
 
-**Lock Screen:** i3lock and xautolock** 
+**Lock Screen:** i3lock and xautolock   
 `xautolock -time 10 -locker i3lock -corners 00-0`  
-
 This command will set the lockscreen timer to 10 mins and will not lock the screen if the cursor is moved to the bottom right corner. Helps if you are watching a video and not want to have the screen lock suddenly.  
 
-Volume Manager:** volumeicon  
+**Volume Manager:** volumeicon  
 Gives you a tray icon and lets you change volume using the volume keys.  
 
 **Notification daemon**: dunst  
