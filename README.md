@@ -54,7 +54,7 @@ You can use it to configure the themes, fonts, display settings, mouse and touch
 
 **Lock Screen:** i3lock and xautolock   
 `xautolock -time 10 -locker i3lock -corners 00-0`  
-This command will set the lockscreen timer to 10 mins and will not lock the screen if the cursor is moved to the bottom right corner. Helps if you are watching a video and not want to have the screen lock suddenly.  
+This command will set the lockscreen timer to 10 mins and will not lock the screen if the cursor is moved to the bottom left corner. Helps if you are watching a video and not want to have the screen lock suddenly.  
 
 **Volume Manager:** volumeicon  
 Gives you a tray icon and lets you change volume using the volume keys.  
