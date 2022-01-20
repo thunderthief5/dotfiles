@@ -24,8 +24,8 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 **Terminal Emulator:** gnome-terminal, rxvt-unicode, xterm, alacritty  
 **Shell:** bash, zsh, fish  
 **Notification daemon:** dunst  
-**Dock:** Plank  
-**Bar:** Polybar  
+**Dock:** plank  
+**Bar:** polybar  
 **App launcher:** Rofi   
 **Media Player:** mpv  
 
@@ -58,9 +58,10 @@ Gives you a tray icon and lets you change volume using the volume keys.
 **Notification daemon**: dunst  
 Takes care of notifications. 
 
-**Bar**: Polybar  
+**Bar**: polybar  
+Highly configurable and looks great.
 
-**App Launcher:** Rofi  
+**App Launcher:** rofi  
 Its just not an app launcher. It does quite a lot of other things too. 
 
 **Polkit**: polkit-gnome  
