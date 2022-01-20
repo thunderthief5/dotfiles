@@ -1,2 +1,4 @@
-# dotfiles
+# █▀▄ █▀█ ▀█▀ █▀▀ █ █░░ █▀▀ █▀
+# █▄▀ █▄█ ░█░ █▀░ █ █▄▄ ██▄ ▄█
+
 ThunderThief's Dotfiles
