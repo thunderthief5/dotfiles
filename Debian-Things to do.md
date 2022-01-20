@@ -1,5 +1,6 @@
-# █▀▄ █▀▀ █▄▄ █ ▄▀█ █▄░█ ▀   ▀█▀ █░█ █ █▄░█ █▀▀ █▀   ▀█▀ █▀█   █▀▄ █▀█
-# █▄▀ ██▄ █▄█ █ █▀█ █░▀█ ▄   ░█░ █▀█ █ █░▀█ █▄█ ▄█   ░█░ █▄█   █▄▀ █▄█
+# Debian: Things To Do  
+
+Some of the stuff I do after a fresh install of Debian.  
 
 **Update apt**  
 `sudo apt update`
