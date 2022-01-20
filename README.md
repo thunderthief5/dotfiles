@@ -4,14 +4,14 @@
 
 I use `stow` (GNU Stow). It is available on almost every distro.
 
-1.Install stow using your package manager.  
+1. Install stow using your package manager.  
 
-2.Clone this repo  
+2. Clone this repo  
 `git clone https://github.com/thunderthief5/dotfiles.git`
 
-3.Use stow to adopt the home/ folder. This command will place symlinks to all the dotfiles in their appropriate locations in the home directory.  
+3. Use stow to adopt the home/ folder. This command will place symlinks to all the dotfiles in their appropriate locations in the home directory.  
 `cd dotfiles`  
 `stow -v --adopt home/`  
 
-4.If you add any new files to your dotfiles folder, you may update it using the restow flag.  
+4. If you add any new files to your dotfiles folder, you may update it using the restow flag.  
 `stow -v --adopt --restow home/`  
