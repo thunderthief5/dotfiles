@@ -193,5 +193,3 @@ eval "$(starship init bash)"
 echo '
 █▄▄ ▄▀█ █▀ █░█
 █▄█ █▀█ ▄█ █▀█' | lolcat
-
-#. "$HOME/.cargo/env"
