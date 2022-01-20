@@ -18,11 +18,12 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 
 ## My most used packages
 
-**DE:** Gnome *Whenever I want to take a break from ricing   
+**DE:** Gnome *Whenever I want to take a break from ricing*   
 **WM:** bspwm, i3, openbox, herbstluftwm, spectrwm  
 **Text Editor:** vim, neovim, gedit  
 **Terminal Emulator:** gnome-terminal, rxvt-unicode, xterm, alacritty  
 **Shell:** bash, zsh, fish  
+**Shell prompt:** starship
 **Notification daemon:** dunst  
 **Dock:** plank  
 **Bar:** polybar  
@@ -32,7 +33,9 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 ## My guide to using a tiling WM
 
 ### Must have apps  
-While Tiling WMs are lightweight and highly configurable, they still lack a lot of functionality that comes built into most full-fledged DEs. Eg: Setting wallpapers, managing the lock screen and power management etc. I use the following apps to take care of all that stuff.
+While Tiling WMs are lightweight and highly configurable, they still lack a lot of functionality that comes built into most full-fledged DEs. Eg: Setting wallpapers, managing the lock screen and power management etc.  
+
+I use the following apps to take care of all that stuff. You may find their respective startup commands in the config files.
 
 **Wallpaper Manager:** nitrogen  
 Helps you set wallpapers
@@ -71,4 +74,6 @@ Start it by putting `/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1` 
 **Misc startup commands:**  
 `xsetroot -cursor_name left_ptr` Sets your cursor right.  
 `xrdb ~/.Xresources` If you are using xterm or rxvt-unicode, it loads their config on startup.  
+
+These are the packages I install on my every tiling WM setup. They are all lightweight and they add quite a lot of functionality and ease of use to the system.
 
