@@ -1,4 +1,1 @@
-# █▀▄ █▀█ ▀█▀ █▀▀ █ █░░ █▀▀ █▀
-# █▄▀ █▄█ ░█░ █▀░ █ █▄▄ ██▄ ▄█
-
-ThunderThief's Dotfiles
+# ThunderThief's Dotfiles
