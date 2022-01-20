@@ -42,6 +42,7 @@ Helps you set wallpapers
 
 **Compositor:** picom  
 While picom itself works great and is sufficient for most users, if you need rounded corners and blurred windows I'd suggest using picom [fork by ibhagwan](https://github.com/ibhagwan/picom).  
+
 **Network Manager:** nm-applet  
 Gives you a wifi menu and a tray applet to configure your networks.  
 

@@ -37,10 +37,10 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="4820"/>
  </document>
- <document uri="file:///home/thunderthief/dotfiles/README.md" atime="1642681262922">
+ <document uri="file:///home/thunderthief/dotfiles/README.md" atime="1642681376884">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
-  <entry key="gedit-position" value="1414"/>
+  <entry key="gedit-position" value="1693"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642673344238">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -92,13 +92,13 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="1533"/>
  </document>
+ <document uri="file:///home/thunderthief/.config/polybar/config.ini" atime="1642529526699">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/.themes/Blocks/openbox-3/themerc" atime="1642304421889">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="2717"/>
- </document>
- <document uri="file:///home/thunderthief/.config/polybar/config.ini" atime="1642529526699">
-  <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/rc&#x25;20&#x28;stable&#x25;7D.xml" atime="1642669704030">
   <entry key="gedit-position" value="0"/>
