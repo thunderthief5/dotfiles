@@ -53,14 +53,14 @@ added_style = "bold blue"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
-conflicted = "[ CONF ](bold red)"
-ahead      = "[ AHE ](bold green)"
-behind     = "[ BEH ](bold red)"
+conflicted = "[ CONFLICT ](bold red)"
+ahead      = "[ AHEAD ](bold white)"
+behind     = "[ BEHIND ](bold red)"
 diverged   = "[ DIV ](bold blue)"
-up_to_date = "[  ](bold green)"
-untracked  = "[ UNT ](bold red)"
-stashed    = "[ STA ](bold blue)"
+up_to_date = "[ UP  ](bold white)"
+untracked  = "[ UN-T ](bold red)"
+stashed    = "[ STASH ](bold blue)"
 modified   = "[ MOD ](bold purple)"
-staged     = '[ STA  \($count\) ](bold cyan)'
+staged     = '[ STAG  \($count\) ](bold cyan)'
 renamed    = "[ REN ](bold cyan)"
 deleted    = "[ DEL ](bold red)"
