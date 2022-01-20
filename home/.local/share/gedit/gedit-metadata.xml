@@ -10,13 +10,16 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="7607"/>
  </document>
+ <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/Downloads/Documents/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642670263269">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///home/thunderthief/dotfiles/Debian-Things&#x25;20to&#x25;20do.md" atime="1642687262354">
+ <document uri="file:///home/thunderthief/dotfiles/Debian-Things&#x25;20to&#x25;20do.md" atime="1642687548991">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
-  <entry key="gedit-position" value="83"/>
+  <entry key="gedit-position" value="1562"/>
  </document>
  <document uri="file:///home/thunderthief/.config/bspwm/autostart.sh" atime="1642560072281">
   <entry key="gedit-position" value="147"/>
@@ -29,9 +32,6 @@
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/picom/picom.conf.bak" atime="1642669734636">
-  <entry key="gedit-position" value="0"/>
- </document>
- <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/environment" atime="1642669717524">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/input.conf" atime="1642671485379">
