@@ -15,3 +15,14 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 
 4. If you add any new files to your dotfiles folder, you may update it using the restow flag.  
 `stow -v --adopt --restow home/`  
+
+## My most used packages
+
+**DE:** Gnome (Whenever I want to take a break from ricing)  
+**WM:** bspwm, i3, openbox, herbstluftwm, spectrwm  
+**Text Editor:** vim, neovim, gedit  
+**Terminal Emulatore:** gnome-terminal, rxvt-unicode, xterm, alacritty  
+**Notification daemon:** dunst  
+**Dock:** Plank  
+**Bar:** Polybar  
+
