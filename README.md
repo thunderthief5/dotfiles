@@ -21,8 +21,10 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 **DE:** Gnome (Whenever I want to take a break from ricing)  
 **WM:** bspwm, i3, openbox, herbstluftwm, spectrwm  
 **Text Editor:** vim, neovim, gedit  
-**Terminal Emulatore:** gnome-terminal, rxvt-unicode, xterm, alacritty  
+**Terminal Emulator:** gnome-terminal, rxvt-unicode, xterm, alacritty  
+**Shell:** bash, zsh, fish  
 **Notification daemon:** dunst  
 **Dock:** Plank  
 **Bar:** Polybar  
+**App launcher:** Rofi  
 
