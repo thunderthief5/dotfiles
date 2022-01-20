@@ -11,9 +11,9 @@ disabled = false  #separates the prompt into two lines
 #error_symbol   = "[\uf054\uf053](bold red)"
 #vicmd_symbol   = "[\ue62b](bold blue)"
 
-success_symbol = "[+](bold green)"
-error_symbol   = "[x](bold red)"
-vicmd_symbol   = "[^](bold blue)"
+success_symbol = "[](bold purple)"
+error_symbol   = "[](bold red)"
+vicmd_symbol   = "[\ue62b](bold blue)"
 
 [hostname]
 ssh_only = false
