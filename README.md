@@ -26,6 +26,6 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 **Notification daemon:** dunst  
 **Dock:** Plank  
 **Bar:** Polybar  
-**App launcher:** Rofi 
+**App launcher:** Rofi   
 **Media Player:** mpv  
 
