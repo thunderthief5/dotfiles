@@ -1,0 +1,31 @@
+cd dotfiles/
+stow -v --adopt home/
+
+
+sudo apt install stow vim htop neofetch exa lolcat bat neovim
+sudo apt install zsh starship fish
+sudo apt install zsh git curl uget wget ufw gufw fish
+
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+sudo ufw enable
+systemctl enable ufw
+
+sudo cp -iv Bibata-Modern-Classic /usr/share/icons/
+sudo mv Bibata-* /usr/share/icons/
+gt-load 
+
+sudo apt purge gnome-{weather,maps,todo,sound-recorder,documents,software,contacts,music} rhythmbox evolution thunderbird shotwell transmission-gtk
+
+sudo apt install x11-apps x11-session-utils xinit xorg
+
+sudo apt-get purge gnome-2048 aisleriot atomix gnome-chess five-or-more hitori iagno gnome-klotski lightsoff gnome-mahjongg gnome-mines gnome-nibbles quadrapassel four-in-a-row gnome-robots gnome-sudoku swell-foop tali gnome-taquin gnome-tetravex
+
+sudo apt purge task-gnome-desktop task-*
+sudo apt purge libreoffice-*
+sudo apt purge mlterm xiterm+*
+sudo aot purge mlterm-*
+sudo apt purge mlterm-*
+sudo apt purge mlterm-* --autoremove
+
+wget -qO- https://git.io/papirus-icon-theme-install | sh
