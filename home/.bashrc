@@ -16,6 +16,11 @@ if [ -d "$HOME/.bin" ] ;
   then PATH="$HOME/.bin:$PATH"
 fi
 
+# create .local/bin if it doesnt exist
+if ! [[ -d "$HOME/.local/bin" ]]; then
+mkdir -p $HOME/.local/bin
+fi
+
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
