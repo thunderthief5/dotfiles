@@ -7,7 +7,7 @@
 
 # Volume
 volume-alsa() {
-vol=`amixer get Master | awk -F'[][]' 'END{ print $4":"$2 }' | sed 's/on://g'`
+vol=`amixer get Master | awk -F'[][]' 'END{ print $4"|"$2 }' | sed 's/on://g'`
     echo -e "$vol"
 }
 
