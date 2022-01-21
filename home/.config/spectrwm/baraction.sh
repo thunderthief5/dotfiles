@@ -6,17 +6,17 @@
 ### {{{ Modules
 
 # Volume
-volume-alsa() {
-vol=`amixer get Master | awk -F'[][]' 'END{ print $4"|"$2 }' | sed 's/on://g'`
+volume (){
+if command -v amixer 2>&1 >/dev/null; then
+    vol=`amixer get Master | awk -F'[][]' 'END{ print $4"|"$2 }' | sed 's/on://g'`
     echo -e "$vol"
-}
-
-volume() {
+elif command -v pamixer 2>&1 >/dev/null; then
     if [ "$(pamixer --get-mute)" = "true" ]; then
         echo 'M'
     else
         echo $(pamixer --get-volume)
     fi
+fi
 }
 
 # Capslock
@@ -163,6 +163,6 @@ cpu() {
 ### }}}
 
 while true; do
-  echo "+|1C +@fg=0;[+@fg=1;$(date +'%H:%M')+@fg=0;] +|1R +@fg=0;$(capslock) [RAM:+@fg=1;$(mem)+@fg=0;] +@fg=0;[BAT:+@fg=1;$(bat_per0)+@fg=1;|$(bat_per1)+@fg=0;] +@fg=0;[VOL:+@fg=1;$(volume-alsa)+@fg=0;] [BRI:+@fg=1;$(brightness)+@fg=0;] [WIFI:+@fg=1;$(network)+@fg=0;]"
+  echo "+|1C +@fg=0;[+@fg=1;$(date +'%H:%M')+@fg=0;] +|1R +@fg=0;$(capslock) [RAM:+@fg=1;$(mem)+@fg=0;] +@fg=0;[BAT:+@fg=1;$(bat_per0)+@fg=1;|$(bat_per1)+@fg=0;] +@fg=0;[VOL:+@fg=1;$(volume)+@fg=0;] [BRI:+@fg=1;$(brightness)+@fg=0;] [WIFI:+@fg=1;$(network)+@fg=0;]"
     sleep 0.25
 done
