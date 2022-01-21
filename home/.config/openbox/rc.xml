@@ -421,7 +421,7 @@
     <!-- Mpv-yt -->
     <keybind key="W-y">
       <action name="Execute">
-        <command>~/.local/bin/mpv-yt</command>
+        <command>~/.bin/mpv-yt</command>
       </action>
     </keybind>
     <!-- Screenshot -->

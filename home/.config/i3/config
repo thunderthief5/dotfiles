@@ -73,7 +73,7 @@ bindsym $mod+b       $execute ~/.config/rofi/scripts/configbrowser -v
 bindsym $mod+Shift+b $execute ~/.config/rofi/scripts/configbrowser -e
 
 # mpv-yt
-bindsym $mod+y $execute ~/.local/bin/mpv-yt
+bindsym $mod+y $execute ~/.bin/mpv-yt
 
 # Screenshot
 bindsym Print  $execute gnome-screenshot

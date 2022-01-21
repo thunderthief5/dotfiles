@@ -160,7 +160,7 @@ super + 0
 
 # mpv youtube
 super + y
-        ~/.local/bin/mpv-yt
+        ~/.bin/mpv-yt
 
 # whiskermenu
 #super + a
