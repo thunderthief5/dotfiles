@@ -88,4 +88,4 @@ Resolution(){
 }
 
 
-echo -e "  $(Clock) $(Date)\n  $(User)@$(Host)\n  $(Release)\n  $(Kernel)\n  pkgs $(Packages), flatpaks $(Flatpaks)\n  $(WM)\n  $(Uptime)\n  $(RAM)\n  $(CPU)\n  $(Resolution)\n  $(WIFI)" | dmenu -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=16 -p $USER
+echo -e "  $(Clock) $(Date)\n  $(User)@$(Host)\n  $(Release)\n  $(Kernel)\n  pkgs $(Packages), flatpaks $(Flatpaks)\n  $(WM)\n  $(Uptime)\n  $(RAM)\n  $(CPU)\n  $(Resolution)\n" | dmenu -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=16 -p $USER

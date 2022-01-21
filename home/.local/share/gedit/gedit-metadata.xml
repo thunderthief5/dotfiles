@@ -87,6 +87,9 @@
  <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/i3/config.original" atime="1642669649934">
   <entry key="gedit-position" value="0"/>
  </document>
+ <document uri="file:///home/thunderthief/.config/rofi/scripts/powermenu" atime="1642738179721">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/dotfiles/Tiling&#x25;20WM-Things&#x25;20to&#x25;20do.md" atime="1642689429421">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
@@ -128,8 +131,18 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="803"/>
  </document>
+ <document uri="file:///home/thunderthief/.config/rofi/scripts/dmenubar" atime="1642738064917">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="1642"/>
+ </document>
  <document uri="file:///home/thunderthief/.config/spectrwm/spectrwm.conf.bak" atime="1642218784570">
   <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="file:///home/thunderthief/.config/rofi/scripts/rofifetch" atime="1642738152958">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="1639"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/history.log" atime="1642671499970">
   <entry key="gedit-position" value="0"/>
