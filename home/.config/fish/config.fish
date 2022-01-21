@@ -5,11 +5,11 @@
 
 ##### General settings
 set fish_greeting                      # hide fish intro message
-#set TERM "xterm-256color"              # Sets the terminal type
+#set TERM "xterm-256color"             # Sets the terminal type
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
-set PATH $HOME/.local/bin $PATH        # Add .local/bin to $PATH
+set PATH $HOME/.local/bin $HOME/.bin/ $PATH        # Add .bin, .local/bin to $PATH
 
 source ~/.aliases                      # Use Bash Aliases
 
