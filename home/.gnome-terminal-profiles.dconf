@@ -1,5 +1,5 @@
 [/]
-default='8ddbaf29-c78f-4e68-8c8e-76110c29729c'
+default='e39bc225-5874-42a9-9d40-0d98b5aade14'
 list=['163821f2-0e85-47d1-8ac7-9447ce8901f2', '33607330-80cc-404c-9c9d-ff8678b53496', 'b9b83bb9-f9bb-4105-8fe8-9305dc7f9f4e', '12d28906-75bb-4154-82e0-cc5679a1d1b2', '2ced342c-f38b-4a17-8690-860827bfe218', '0fd5f794-450b-4583-834e-70520e815b9b', 'b1e23ed1-0c7f-4670-b81e-05317193ad12', 'fcb91245-3770-4783-8b7e-cdac0f666f28', 'b11911c4-2957-4957-a605-081b0151817e', '3b14429a-bae3-4d32-a32d-fa7d1a3560bf', 'f758f589-ab3b-4782-8a00-77a914afedc9', 'd77aa1b7-fda0-47da-8ee0-488f5bcec140', 'ffd938e7-13df-4165-b8cc-a953783e6ea0', '0e010d32-7bbf-4797-8c59-93a207003584', 'cf247bb5-3b8f-402b-b8ff-1d10be10c2db', '5595d193-df63-4159-8927-041e54d69db1', 'e39aa81f-9e7a-4faf-a7ce-1d703599bf7c', '65d667ad-920b-4119-b50b-4b0f8037ecbb', 'ea6ba9de-e437-4546-a8f2-bf020514b284', 'cca4dc65-e30a-4556-9a6d-02e0ed59ceeb', '9cf9ed3f-f48c-4dfa-89e9-c621960d3d88', '8ddbaf29-c78f-4e68-8c8e-76110c29729c', 'f8cb7b8a-c26d-40f8-a076-406fd5dba6e0', '40a1c3da-cb2c-47bb-be1d-4f5496003cfc', '9bd5a789-0ff2-4745-99e6-b775203fdec5', 'f5f22be0-b8fa-4523-b021-f91ebc72f43a', 'e39bc225-5874-42a9-9d40-0d98b5aade14', '8a69f689-3c8d-4b00-b801-05dcf6908820']
 
 [:030ff7a6-c6ce-40c6-b055-5d24286f6656]
@@ -1024,7 +1024,7 @@ visible-name='Material'
 
 [:fcb91245-3770-4783-8b7e-cdac0f666f28]
 audible-bell=true
-background-color='rgb(39,39,39)'
+background-color='rgb(28,27,34)'
 background-transparency-percent=3
 bold-color='#fdfdfd'
 bold-color-same-as-fg=true
