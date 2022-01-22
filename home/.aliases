@@ -104,7 +104,7 @@ alias pac-bundle='xargs -a Pacfile sudo pacman -S --needed' # install uninstalle
 
 alias flat-dump='flatpak list --app | cut -f2 > Flatfile'
 alias flat-bundle='xargs -a Flatfile flatpak install'
-alias flat-list='flatpak list --app'
+alias flat-list='flatpak list --app --columns=name,application,runtime'
 
 # get fastest Arch mirrors with reflector
 alias mirrorx='sudo reflector --age 6 --latest 20 --fastest 20 --threads 20 --sort rate --protocol https --save /etc/pacman.d/mirrorlist'
