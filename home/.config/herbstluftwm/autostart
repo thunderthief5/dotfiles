@@ -63,7 +63,7 @@ hc keybind $Mod-Control-l     chain , split right  0.5 , focus right
 
 # let the current frame explode into subframes
 hc keybind $Mod-z split explode
-hc keybind $Mod-u split auto
+hc keybind $Mod-a split auto
 # remove frame
 hc keybind $Mod-r remove
 
