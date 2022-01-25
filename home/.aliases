@@ -41,7 +41,7 @@ alias clr='clear'
 alias svim='sudo -E vim'
 
 # Gnu-stow
-alias stow-dotfiles='cd dotfiles && stow --adopt --restow home && cd'
+alias stow-dotfiles='cd dotfiles && stow -v --adopt --restow home && cd'
 
 # youtube-dl
 alias yta-aac="youtube-dl --extract-audio --audio-format aac "
