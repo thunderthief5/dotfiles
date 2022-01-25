@@ -160,7 +160,7 @@ cpu() {
 ### }}}
 
 status(){
-	echo "$(capslock) [RAM:$(mem)] [BAT:$(bat_per0)|$(bat_per1)] [VOL:$(volume)] [BRI:$(brightness)] [WIFI:$(network)] [$(date +'%H:%M')]"
+	echo "$(capslock) [BAT:$(bat_per0)|$(bat_per1)] [VOL:$(volume)] [BRI:$(brightness)] [WIFI:$(network)] [$(date +'%H:%M')]"
 }
 
 

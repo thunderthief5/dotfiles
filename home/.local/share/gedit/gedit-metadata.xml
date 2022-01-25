@@ -2,7 +2,7 @@
  <document uri="file:///home/thunderthief/alacritty/alacritty.yml" atime="1642341516802">
   <entry key="gedit-position" value="2283"/>
  </document>
- <document uri="file:///home/thunderthief/.dwm/dwmbar.sh" atime="1643101710006">
+ <document uri="file:///home/thunderthief/.dwm/dwmbar.sh" atime="1643108166903">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="3339"/>
@@ -126,6 +126,11 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="709"/>
  </document>
+ <document uri="file:///home/thunderthief/Downloads/dwmbar.sh" atime="1643108147480">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="3339"/>
+ </document>
  <document uri="file:///home/thunderthief/.config/i3blocks/config" atime="1642413438280">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
@@ -175,6 +180,9 @@
  <document uri="file:///home/thunderthief/.config/spectrwm/spectrwm.conf.bak" atime="1642218784570">
   <entry key="gedit-position" value="0"/>
  </document>
+ <document uri="file:///home/thunderthief/Downloads/st/config.h" atime="1643107857702">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/.config/rofi/scripts/rofifetch" atime="1642738152958">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
@@ -182,6 +190,11 @@
  </document>
  <document uri="file:///home/thunderthief/.dwm/config.def.h" atime="1643101406099">
   <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="file:///home/thunderthief/Downloads/st/config.def.h" atime="1643107862818">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="3530"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/history.log" atime="1642671499970">
   <entry key="gedit-position" value="0"/>
