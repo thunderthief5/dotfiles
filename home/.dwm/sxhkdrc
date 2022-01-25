@@ -14,7 +14,7 @@ super + Escape
 #	gnome-terminal
 
 ctrl + alt + t
-        gnome-terminal
+        xterm
 
 # dmenu
 super + d
