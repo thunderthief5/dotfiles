@@ -160,11 +160,11 @@ cpu() {
 ### }}}
 
 status(){
-	echo " $(capslock) [RAM:$(mem)] [BAT:$(bat_per0)|$(bat_per1)] [VOL:$(volume)] [BRI:$(brightness)] [WIFI:$(network)] [$(date +'%H:%M')]"
+	echo "$(capslock) [RAM:$(mem)] [BAT:$(bat_per0)|$(bat_per1)] [VOL:$(volume)] [BRI:$(brightness)] [WIFI:$(network)] [$(date +'%H:%M')]"
 }
 
 
 while true; do
 	xsetroot -name "$(status)"
-	sleep 5
+	sleep 0.25
 done
