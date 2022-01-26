@@ -18,7 +18,7 @@ static const char col_5[]        = "#282828";
 static const char *colors[][3]      = {
 	/*               fg         bg     border   */
 	[SchemeNorm] = { col_3,   col_1,   col_5 },
-	[SchemeSel]  = { col_4,   col_5,   col_3  },
+	[SchemeSel]  = { col_1,   col_3,   col_3  },
 };
 
 /* tagging */

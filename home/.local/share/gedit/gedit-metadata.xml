@@ -26,6 +26,9 @@
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="1505"/>
  </document>
+ <document uri="trash:///dotfiles/home/.dwm/config.def.h.orig" atime="1643112106828">
+  <entry key="gedit-position" value="0"/>
+ </document>
  <document uri="file:///home/thunderthief/.config/spectrwm/baraction.sh" atime="1643101509745">
   <entry key="gedit-position" value="0"/>
  </document>
@@ -101,23 +104,23 @@
  <document uri="file:///home/thunderthief/dotfiles/home/.bashrc" atime="1642751469495">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///media/thunderthief/arch_home/thunderthief/dotfiles/home/.config/fish/config.fish" atime="1642746585372">
-  <entry key="gedit-position" value="0"/>
- </document>
  <document uri="file:///home/thunderthief/dotfiles/Tiling&#x25;20WM-&#x25;20Things&#x25;20to&#x25;20do.md" atime="1642689228118">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="1"/>
  </document>
- <document uri="file:///home/thunderthief/.config/i3blocks/config" atime="1642413438280">
-  <entry key="gedit-encoding" value="UTF-8"/>
-  <entry key="gedit-spell-language" value="en_US"/>
-  <entry key="gedit-position" value="1533"/>
+ <document uri="file:///media/thunderthief/arch_home/thunderthief/dotfiles/home/.config/fish/config.fish" atime="1642746585372">
+  <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/.config/i3/config" atime="1642747036228">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="2296"/>
+ </document>
+ <document uri="file:///home/thunderthief/.config/i3blocks/config" atime="1642413438280">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="1533"/>
  </document>
  <document uri="file:///home/thunderthief/.config/ranger/rc.conf" atime="1643130539209">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -130,6 +133,9 @@
   <entry key="gedit-position" value="1639"/>
  </document>
  <document uri="file:///home/thunderthief/.local/share/plank/themes/Frost/dock.theme" atime="1642820400680">
+  <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="trash:///commands.py" atime="1643130638719">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/.config/rofi/drun.rasi" atime="1642215507385">
@@ -145,16 +151,16 @@
  <document uri="file:///home/thunderthief/.config/spectrwm/spectrwm.conf.bak" atime="1642218784570">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///home/thunderthief/.dwm/config.def.h" atime="1643112884123">
-  <entry key="gedit-encoding" value="UTF-8"/>
-  <entry key="gedit-spell-language" value="en_US"/>
-  <entry key="gedit-position" value="3710"/>
+ <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/i3/config.bak" atime="1642669643183">
+  <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/Documents/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642670263269">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/i3/config.bak" atime="1642669643183">
-  <entry key="gedit-position" value="0"/>
+ <document uri="file:///home/thunderthief/.dwm/config.def.h" atime="1643164124030">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-spell-language" value="en_US"/>
+  <entry key="gedit-position" value="1137"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/st/config.def.h" atime="1643107862818">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -177,28 +183,22 @@
  <document uri="file:///home/thunderthief/.dwm/README" atime="1643099848458">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="trash:///commands.py" atime="1643130638719">
-  <entry key="gedit-position" value="0"/>
- </document>
  <document uri="file:///home/thunderthief/alacritty/alacritty.yml" atime="1642341516802">
   <entry key="gedit-position" value="2283"/>
  </document>
- <document uri="trash:///dotfiles/home/.dwm/config.def.h.orig" atime="1643112106828">
+ <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/rc&#x25;20&#x28;stable&#x25;7D.xml" atime="1642669704030">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/.config/bspwm/autostart.sh" atime="1642560072281">
   <entry key="gedit-position" value="147"/>
  </document>
- <document uri="file:///home/thunderthief/Downloads/dotfiles/home/.config/openbox/rc&#x25;20&#x28;stable&#x25;7D.xml" atime="1642669704030">
+ <document uri="file:///usr/share/doc/spectrwm/examples/baraction.sh" atime="1642729731166">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/history.log" atime="1642671499970">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/dotfiles/home/.config/mpv/input.conf" atime="1642671485379">
-  <entry key="gedit-position" value="0"/>
- </document>
- <document uri="file:///usr/share/doc/spectrwm/examples/baraction.sh" atime="1642729731166">
   <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/Documents/Debian&#x25;20things&#x25;20to&#x25;20do" atime="1642148635052">
