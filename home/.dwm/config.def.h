@@ -77,7 +77,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "gnome-terminal", NULL };
 
 
-#include "selfrestart.c"
+/*#include "selfrestart.c" */
 
 #include "movestack.c"
 static Key keys[] = {
@@ -116,7 +116,7 @@ static Key keys[] = {
  	{ MODKEY|ControlMask,           XK_Left,   shiftview,      { .i = -1 } },
  	{ MODKEY|ShiftMask,             XK_Right,  shiftboth,      { .i = +1 } },
  	{ MODKEY|ShiftMask,             XK_Left,   shiftboth,      { .i = -1 } }, 
-	{ MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },
+	/*{ MODKEY|ShiftMask,             XK_r,      self_restart,   {0} },*/
 	
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
