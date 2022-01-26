@@ -11,14 +11,14 @@ static const int sidepad            = 3;       /* horizontal padding of bar */
 static const char *fonts[]          = { " ShureTechMono Nerd Font Mono:style=Regular:size=12" };
 static const char dmenufont[]       = "Isonorm:size=14";
 static const char col_1[]       = "#1b1b1b";
-static const char col_2[]       = "#1b1b1b";
+static const char col_2[]       = "#282a36";
 static const char col_3[]       = "#6272a4";
 static const char col_4[]       = "#bd93f9";
-static const char col_5[]        = "#282828";
+static const char col_5[]       = "#282828";
 static const char *colors[][3]      = {
 	/*               fg         bg     border   */
 	[SchemeNorm] = { col_3,   col_1,   col_5 },
-	[SchemeSel]  = { col_1,   col_3,   col_3  },
+	[SchemeSel]  = { col_4,   col_2,   col_3  },
 };
 
 /* tagging */
@@ -79,6 +79,7 @@ static const char *termcmd[]  = { "gnome-terminal", NULL };
 
 #include "selfrestart.c"
 
+#include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
@@ -92,6 +93,8 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask,              XK_Left,   incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.005} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.005} },
+	{ MODKEY|ShiftMask,             XK_j,      movestack,      {.i = +1 } },
+        { MODKEY|ShiftMask,             XK_k,      movestack,      {.i = -1 } },
 	/*{ MODKEY,                       XK_Return, zoom,           {0} },*/
 	/*{ MODKEY,                       XK_Tab,    view,           {0} },*/
 	{ MODKEY|ShiftMask,             XK_q,      killclient,     {0} },
