@@ -33,13 +33,14 @@ static const Rule rules[] = {
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 	{ "URxvt",    NULL,       NULL,       0,            1,           -1 },
-  { "Gufw.py",  NULL,       NULL,       0,            1,           -1 },
-  { "Popsicle", NULL,       NULL,       0,            1,           -1 },
+        { "Gufw.py",  NULL,       NULL,       0,            1,           -1 },
+        { "Popsicle", NULL,       NULL,       0,            1,           -1 },
 	{ "Nitrogen", NULL,       NULL,       0,            1,           -1 },
 	{ "Eog",      NULL,       NULL,       0,            1,           -1 },
-  { "Tor Browser",    NULL,       NULL,       0,            1,           -1 },
-  { "Transmission-gtk",    NULL,       NULL,       0,            1,           -1 },
-  { "Xfce4-power-manager-settings",    NULL,       NULL,       0,            1,           -1 },
+        { "Tor Browser",                     NULL,       NULL,       0,            1,           -1 },
+        { "Transmission-gtk",                NULL,       NULL,       0,            1,           -1 },
+        { "Xfce4-power-manager-settings",    NULL,       NULL,       0,            1,           -1 },
+        { "SimpleScreenRecorder",            NULL,       NULL,       0,            1,           -1 },
 };
 
 /* layout(s) */
