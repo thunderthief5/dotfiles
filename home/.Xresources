@@ -409,3 +409,9 @@ UXTerm*vt100.translations: #override \
 ! }}}}
 
 !! }}}
+
+!! {{{ Misc Settings
+
+Xcursor.theme: Bibata-Modern-Classic
+
+!! }}}

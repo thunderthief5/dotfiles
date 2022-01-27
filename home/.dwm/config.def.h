@@ -40,6 +40,7 @@ static const Rule rules[] = {
         { "Tor Browser",                     NULL,       NULL,       0,            1,           -1 },
         { "Transmission-gtk",                NULL,       NULL,       0,            1,           -1 },
         { "Xfce4-power-manager-settings",    NULL,       NULL,       0,            1,           -1 },
+        { "Xfce4-settings-manager",          NULL,       NULL,       0,            1,           -1 },
         { "SimpleScreenRecorder",            NULL,       NULL,       0,            1,           -1 },
 };
 
