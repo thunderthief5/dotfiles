@@ -1,11 +1,11 @@
 #!/bin/bash
 
-function run {
- if ! pgrep $1 ;
-  then
-    $@&
-  fi
-}
+#function run {
+# if ! pgrep $1 ;
+#  then
+#    $@&
+#  fi
+#}
 picom &
 sxhkd -c ~/.dwm/sxhkdrc &
 xsetroot -cursor_name left_ptr &
