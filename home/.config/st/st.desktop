@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Simple Terminal
+Comment=st is a simple terminal implementation for X
+Exec=/home/thunderthief/.local/bin/st
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;
