@@ -115,6 +115,22 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+	
+      /* Custom Keybindings */
+
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          SHCMD("st") },
+	{ Mod1Mask|ControlMask,         XK_t,      spawn,          SHCMD("xterm") },
+	{ MODKEY,                       XK_d,      spawn,          SHCMD("rofi -modi drun -show drun -display-drun ''") },
+	{ MODKEY|ShiftMask,             XK_d,      spawn,          SHCMD("~/.config/rofi/scripts/rofimenu") },	
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("rofi -modi window -show window -display-window ''") },	
+	{ MODKEY|ShiftMask,             XK_w,      spawn,          SHCMD("rofi -modi windowcd -show windowcd -display-windowcd ''") },	
+	{ MODKEY,                       XK_y,      spawn,          SHCMD("~/.bin/mpv-yt") },	
+	{ MODKEY|ControlMask,           XK_b,      spawn,          SHCMD("~/.config/rofi/scripts/configbrowser -v") },	
+	{ MODKEY|ShiftMask,             XK_b,      spawn,          SHCMD("~/.config/rofi/scripts/configbrowser -e") },	
+	{ MODKEY|ShiftMask,             XK_i,      spawn,          SHCMD("notify-send --icon=redshift 'Redhshift is ON' && redshift -l 17.68009:83.20161 -t 3700:3700") },	
+	{ MODKEY|ShiftMask,             XK_u,      spawn,          SHCMD("pkill redshift && notify-send --icon=redshift 'Redshift is OFF'") },	
+	{ MODKEY,                       XK_Print,  spawn,          SHCMD("gnome-screenshot") },	
+			
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
