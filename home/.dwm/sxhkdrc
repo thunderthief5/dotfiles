@@ -10,8 +10,8 @@ super + Escape
 
 #### {{{ Custom Keybindings for Apps and scripts
 # terminal emulator
-#super + Return
-#	gnome-terminal
+super + shift + Return
+	st
 
 ctrl + alt + t
         xterm

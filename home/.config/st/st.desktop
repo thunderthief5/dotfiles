@@ -1,8 +1,11 @@
 [Desktop Entry]
 Name=Simple Terminal
-Comment=st is a simple terminal implementation for X
-Exec=/home/thunderthief/.local/bin/st
-Icon=utilities-terminal
+GenericName=Terminal
+Comment=Suckless terminal emulator for X
+Exec=st -t "Simple Terminal"
 Terminal=false
 Type=Application
+Encoding=UTF-8
+Icon=utilities-terminal
 Categories=System;TerminalEmulator;
+Keywords=shell;prompt;command;commandline;cmd;
