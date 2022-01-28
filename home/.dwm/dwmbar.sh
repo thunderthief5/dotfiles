@@ -165,7 +165,7 @@ cpu() {
 ### }}}
 
 status(){
-	echo " $(capslock)      $(bat_per0)|$(bat_per1)      $(volume)      $(brightness)      $(network)      $(date +'%H:%M') "
+	echo " $(capslock)      $(bat_per0) | $(bat_per1)      $(volume)      $(brightness)      $(network)      $(date +'%H:%M') "
 }
 
 
