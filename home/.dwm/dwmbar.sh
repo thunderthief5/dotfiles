@@ -5,8 +5,13 @@
 # Volume
 volume (){
 if command -v amixer 2>&1 >/dev/null; then
-    vol=`amixer get Master | awk -F'[][]' 'END{ print $4"|"$2 }' | sed 's/on://g'`
-    echo -e "$vol"
+    vol_stat=$(amixer sget Master | tail -n1 | sed -r "s/.*\[(.*)\]/\1/")   
+    vol=`amixer get Master | tail -n1 | sed -r 's/.*\[(.*)%\].*/\1/'`
+	if [ "$vol_stat" = "off" ]; then
+    		echo "M"
+    	else
+	        echo -e "$vol"	
+	fi        
 elif command -v pamixer 2>&1 >/dev/null; then
     if [ "$(pamixer --get-mute)" = "true" ]; then
         echo 'M'
@@ -160,7 +165,7 @@ cpu() {
 ### }}}
 
 status(){
-	echo "$(capslock) [BAT:$(bat_per0)|$(bat_per1)] [VOL:$(volume)] [BRI:$(brightness)] [WIFI:$(network)] [$(date +'%H:%M')]"
+	echo " $(capslock)      $(bat_per0)|$(bat_per1)      $(volume)      $(brightness)      $(network)      $(date +'%H:%M') "
 }
 
 
