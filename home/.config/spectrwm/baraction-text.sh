@@ -168,6 +168,6 @@ cpu() {
 ### }}}
 
 while true; do
-  echo " +|1R +@fg=0;$(capslock) +<+<  +@fg=0;$(bat_per0) +@fg=0;| $(bat_per1) +<+<  +@fg=0;$(volume) +<+<  +@fg=0;$(brightness) +<+<  +@fg=0;$(network) +<+< +@fg=0;$(date +'%H:%M')"
+  echo "+|1C +@fg=0;[+@fg=1;$(date +'%H:%M')+@fg=0;] +|1R +@fg=0;$(capslock) [RAM:+@fg=1;$(mem)+@fg=0;] +@fg=0;[BAT:+@fg=1;$(bat_per0)+@fg=1;|$(bat_per1)+@fg=0;] +@fg=0;[VOL:+@fg=1;$(volume)+@fg=0;] [BRI:+@fg=1;$(brightness)+@fg=0;] [WIFI:+@fg=1;$(network)+@fg=0;]"
     sleep 0.25
 done
