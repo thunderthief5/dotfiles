@@ -40,8 +40,10 @@ brightness() {
 }
 
 # WiFi
+wifi_interface=$(echo /sys/class/net/*/wireless | awk -F'/' '{ print $5 }')
+
 network() {
-wifi="$(ip a | grep wlan0 | grep inet | wc -l)"
+wifi="$(ip a | grep $wifi_interface | grep inet | wc -l)"
 ## wire="$(ip a | grep eth0 | grep inet | wc -l)"
 ## wifi="$(ip a | grep wlan | grep inet | wc -l)"
 wire="$(ip a | grep enp1s0 | grep inet | wc -l)"

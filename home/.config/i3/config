@@ -91,6 +91,7 @@ bindsym $mod+Shift+u exec pkill redshift && notify-send --icon=redshift 'Redshif
 # {{{ Autostart applications
 
 $execute $HOME/.config/polybar/launch.sh
+$execute /usr/libexec/polkit-gnome-authentication-agent-1
 $execute /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 $execute /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 $execute nitrogen --restore

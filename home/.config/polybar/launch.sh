@@ -10,14 +10,14 @@ while pgrep -x polybar > /dev/null; do sleep 1; done
 
 desktop=$(echo $DESKTOP_SESSION)
 count=$(xrandr --query | grep " connected" | cut -d" " -f1 | wc -l)
-
+wifi=$(echo /sys/class/net/*/wireless | awk -F'/' '{ print $5 }')
 
 case $desktop in
 
     i3|/usr/share/xsessions/i3)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload i3bar -c ~/.config/polybar/config.ini &
+        WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload i3bar -c ~/.config/polybar/config.ini &
       done
     else
     polybar --reload i3bar -c ~/.config/polybar/config.ini &
@@ -27,7 +27,7 @@ case $desktop in
     openbox|/usr/share/xsessions/openbox)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload opbar -c ~/.config/polybar/config.ini &
+       WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload opbar -c ~/.config/polybar/config.ini &
       done
     else
     polybar --reload opbar -c ~/.config/polybar/config.ini &
@@ -37,7 +37,7 @@ case $desktop in
     bspwm|/usr/share/xsessions/bspwm)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload bspbar -c ~/.config/polybar/config.ini &
+        WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload bspbar -c ~/.config/polybar/config.ini &
       done
     else
     polybar --reload bspbar -c ~/.config/polybar/config.ini &
@@ -47,7 +47,7 @@ case $desktop in
     herbstluftwm|/usr/share/xsessions/herbstluftwm)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-        MONITOR=$m polybar --reload hlbar -c ~/.config/polybar/config.ini &
+        WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload hlbar -c ~/.config/polybar/config.ini &
       done
     else
     polybar --reload hlbar -c ~/.config/polybar/config.ini &
