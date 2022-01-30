@@ -43,7 +43,7 @@ fi
 }
 ## Get system info
 user="${USER}@$(hostname)"
-distro='Arch'
+distro="$(awk -F '"' '/PRETTY/ {print $2}' /etc/os-release)"
 kernel="$(uname -sr | sed 's/-.*//')"
 uptime="$(uptime -p | sed 's/up //')"
 shell="$(basename ${SHELL})"
