@@ -43,10 +43,10 @@ hc keybind $Mod-Up    focus up
 hc keybind $Mod-Right focus right
 
 # moving clients to ... on single Monitor
-hc keybind $Mod-Shift-Left  shift_edge left
-hc keybind $Mod-Shift-Down  shift_edge down
-hc keybind $Mod-Shift-Up    shift_edge up
-hc keybind $Mod-Shift-Right shift_edge right
+hc keybind $Mod-Mod1-Left   shift_edge left
+hc keybind $Mod-Mod1-Down   shift_edge down
+hc keybind $Mod-Mod1-Up     shift_edge up
+hc keybind $Mod-Mod1-Right  shift_edge right
 hc keybind $Mod-Shift-h     shift left
 hc keybind $Mod-Shift-j     shift down
 hc keybind $Mod-Shift-k     shift up
@@ -73,10 +73,6 @@ hc keybind $Mod-Mod1-h       resize left  +$resizestep
 hc keybind $Mod-Mod1-j       resize down  +$resizestep
 hc keybind $Mod-Mod1-k       resize up    +$resizestep
 hc keybind $Mod-Mod1-l       resize right +$resizestep
-hc keybind $Mod-Mod1-Left    resize left  +$resizestep
-hc keybind $Mod-Mod1-Down    resize down  +$resizestep
-hc keybind $Mod-Mod1-Up      resize up    +$resizestep
-hc keybind $Mod-Mod1-Right   resize right +$resizestep
 
 # TAGS or WORKSPACES
 
@@ -131,6 +127,9 @@ hc mousebind $Mod-Button3 resize
 hc keybind $Mod-BackSpace       use_previous
 hc keybind $Mod-Control-Right   use_index +1 --skip-visible
 hc keybind $Mod-Control-Left    use_index -1 --skip-visible
+hc keybind $Mod-Shift-Right     chain , move_index +1 , use_index +1 --skip-visible
+hc keybind $Mod-Shift-Left      chain , move_index -1 , use_index -1 --skip-visible
+
 hc keybind Control-Mod1-Left    focus left
 hc keybind Control-Mod1-Up      focus up
 hc keybind Control-Mod1-Right   focus right
