@@ -13,6 +13,9 @@ super + Escape
 super + Return
 	gnome-terminal
 
+super + shift + Return
+	st
+
 ctrl + alt + t
         xterm
 
