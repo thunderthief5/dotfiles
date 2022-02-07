@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=Jellyfin
-Comment=The Free Software Media System
-Exec=~/.bin/jellyfin.sh
-Icon=~/local/share/jellyfin/jellyfin.png
-Terminal=false
-Type=Application
-StartupNotify=true
