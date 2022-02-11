@@ -151,6 +151,7 @@
 /home/thunderthief/Music/Samuel Kim/The Mandalorian/The Mandalorian Theme _ TENET REMIX (The Plan x POSTERITY).mp3
 /home/thunderthief/Music/Samuel Kim/What's Up Danger/01 What's Up Danger (Epic Orchestral Remix).mp3
 /home/thunderthief/Music/Samuel Kim/Loki/Loki Theme V2 EPIC GLORIOUS VERSION.mp3
+/home/thunderthief/Music/Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S_/Akhanda/01 Akhanda - Title Song.m4a
 /home/thunderthief/Music/Steve Miller Band/Fly Like An Eagle/01 Fly Like An Eagle.mp3
 /home/thunderthief/Music/Survivor/Eye of the Tiger (Remastered)/01 Eye of the Tiger.mp3
 /home/thunderthief/Music/Susumu Hirasawa/Paprika/Parade.mp3
@@ -161,4 +162,5 @@
 /home/thunderthief/Music/Tina Guo/Wonder Woman Main Theme/01 Wonder Woman Main Theme.mp3
 /home/thunderthief/Music/Toni Braxton/Secrets/01 Un-Break My Heart.mp3
 /home/thunderthief/Music/Tony Romera/Heat Wave/01 Heat Wave.mp3
+/home/thunderthief/Music/Vijay Urs, Santhosh, Arun, Mohan, Ananya Bhat, Shri Krishna, Adithya, Lokeshwar, Ganta & H. Shreenivas/KGF Chapter 1 (Telugu) [Original Motion Picture Soundtrack]/03 Evvadikevvadu Banisa.m4a
 /home/thunderthief/Music/Yutaka Yamada/Vinland Saga/Vinland Saga Epic OST - Battle Theme Extended.m4a
