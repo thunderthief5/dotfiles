@@ -61,8 +61,10 @@ client.background       #F8F8F2
 # {{{ Launch applications
 # start a Terminal
 set $myTerm gnome-terminal
-bindsym $mod+Return exec $myTerm
-bindsym Mod1+Ctrl+t exec xterm
+
+bindsym $mod+Return       exec $myTerm
+bindsym Mod1+Ctrl+t       exec xterm
+bindsym $mod+Shift+Return exec st
 
 # start Rofi
 bindsym $mod+d       $execute rofi -modi drun -show drun -display-drun ''
