@@ -3,10 +3,10 @@
 rofi_command="rofi -dmenu -p PowerMenu"
 
 ### Options ###
-power_off=" poweroff"
-reboot=" reboot"
-lock=" lock"
-suspend=" suspend"
+power_off="Poweroff"
+reboot="Reboot"
+lock="Lock"
+suspend="Suspend"
 # Variable passed to rofi
 options="$lock\n$suspend\n$reboot\n$power_off\n"
 
