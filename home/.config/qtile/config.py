@@ -178,7 +178,7 @@ screens = [Screen(bottom=bar.Gap(29))]
 
 # }}}
 
-# {{{ Mouse configuration
+# {{{ Mouse settings
 
 mouse = [
     Drag([mod], "Button1", lazy.window.set_position_floating(),
