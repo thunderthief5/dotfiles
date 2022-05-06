@@ -110,6 +110,12 @@ keys = [
 # TOGGLE FLOATING LAYOUT
     Key([mod, "shift"], "space", lazy.window.toggle_floating()),
 
+# MOVE WINDOWS UP OR DOWN Spiral LAYOUT
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
+    Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
+    Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
+
     ]
 
 # }}}
@@ -124,7 +130,7 @@ group_names = ["1", "2", "3", "4",]
 group_labels = ["A", "B", "C", "D",]
 #group_labels = ["", "", "", "", "", "", "", "", "", "",]
 
-group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall",]
+group_layouts = ["spiral", "monadtall", "monadtall", "monadtall",]
 
 for i in range(len(group_names)):
     groups.append(
@@ -170,8 +176,9 @@ layout_theme = init_layout_theme()
 
 layouts = [
     layout.MonadTall(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
-    layout.MonadWide(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
-    layout.Max(**layout_theme)
+    #layout.MonadWide(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
+    layout.Spiral(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", clockwise=True, ratio=0.5, new_client_position='after_current'),
+    layout.Max(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
 ]
 
 screens = [Screen(bottom=bar.Gap(29))]
