@@ -42,7 +42,7 @@ else
 fi
 }
 ## Get system info
-user="${USER}@$(hostname)"
+user="${USER}@$(hostnamectl --static)"
 distro="$(awk -F '"' '/PRETTY/ {print $2}' /etc/os-release)"
 kernel="$(uname -sr | sed 's/-.*//')"
 uptime="$(uptime -p | sed 's/up //')"

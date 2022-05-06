@@ -14,7 +14,7 @@ inv=$'\e[7m'
 
 # detect
 user=$(whoami)
-host=$(hostname)
+host=$(hostnamectl --static)
 kernel=$(uname -r)
 shell=$(basename $SHELL)
 os() {
