@@ -43,7 +43,7 @@ case $desktop in
     polybar --reload bspbar -c ~/.config/polybar/config.ini &
     fi
     ;;
-    
+
     herbstluftwm|/usr/share/xsessions/herbstluftwm)
     if type "xrandr" > /dev/null; then
       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
@@ -53,5 +53,15 @@ case $desktop in
     polybar --reload hlbar -c ~/.config/polybar/config.ini &
     fi
     ;;
-esac
 
+    qtile|/usr/share/xsessions/qtile)
+    if type "xrandr" > /dev/null; then
+      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload qbar -c ~/.config/polybar/config.ini &
+      done
+    else
+    polybar --reload qbar -c ~/.config/polybar/config.ini &
+    fi
+    ;;
+
+esac
