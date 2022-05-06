@@ -49,7 +49,7 @@ keys = [
 # SUPER + FUNCTION KEYS
 
     Key([mod], "f", lazy.window.toggle_fullscreen()),
-    Key([mod], "q", lazy.window.kill()),
+#    Key([mod], "q", lazy.window.kill()),
 
 
 # SUPER + SHIFT KEYS
@@ -148,8 +148,8 @@ for i in groups:
         Key([mod, "control"], "Left", lazy.screen.prev_group()),
         Key([mod, "control"], "Right", lazy.screen.next_group()),
 
-        Key([mod, "shift"], "Left", lazy.screen.prev_group()),
-        Key([mod, "shift"], "Right", lazy.screen.next_group()),
+#        Key([mod, "shift"], "Left", lazy.screen.prev_group()),
+#        Key([mod, "shift"], "Right", lazy.screen.next_group()),
 
 
         # MOVE WINDOW TO SELECTED WORKSPACE 1-10 AND STAY ON WORKSPACE
