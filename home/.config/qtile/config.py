@@ -178,7 +178,9 @@ layouts = [
     layout.MonadTall(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
     #layout.MonadWide(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
     layout.Spiral(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", clockwise=True, ratio=0.5, new_client_position='after_current'),
+    layout.Zoomy(margin=6, columnwidth=290),
     layout.Stack(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", num_stacks=1),
+    #layout.TreeTab(margin=6, border_width=2, bg_color="#1b1b1b", active_fg="#bd93f9", active_bg="#1b1b1b", inactive_fg="#6272a4", inactive_bg="#1b1b1b", font="Product Sans Bold", fontsize=14, margin_left=6, margin_y=6),
     #layout.Tile(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
     ]
 
