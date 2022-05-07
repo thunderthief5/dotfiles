@@ -101,20 +101,27 @@ keys = [
 # FLIP LAYOUT FOR MONADTALL/MONADWIDE
     Key([mod, "shift"], "f", lazy.layout.flip()),
 
-# MOVE WINDOWS UP OR DOWN MONADTALL/MONADWIDE LAYOUT
-    Key([mod, "mod1"], "Up", lazy.layout.shuffle_up()),
-    Key([mod, "mod1"], "Down", lazy.layout.shuffle_down()),
-    Key([mod, "mod1"], "Left", lazy.layout.swap_left()),
-    Key([mod, "mod1"], "Right", lazy.layout.swap_right()),
+# FLIP LAYOUT FOR BSP
+    Key([mod, "control"], "k", lazy.layout.flip_up()),
+    Key([mod, "control"], "j", lazy.layout.flip_down()),
+    Key([mod, "control"], "l", lazy.layout.flip_right()),
+    Key([mod, "control"], "h", lazy.layout.flip_left()),
 
-# TOGGLE FLOATING LAYOUT
-    Key([mod, "shift"], "space", lazy.window.toggle_floating()),
-
-# MOVE WINDOWS UP OR DOWN Spiral LAYOUT
+# MOVE WINDOWS UP OR DOWN BSP LAYOUT
     Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
     Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
     Key([mod, "shift"], "h", lazy.layout.shuffle_left()),
     Key([mod, "shift"], "l", lazy.layout.shuffle_right()),
+
+# MOVE WINDOWS UP OR DOWN MONADTALL/MONADWIDE LAYOUT
+    Key([mod, "shift"], "Up", lazy.layout.shuffle_up()),
+    Key([mod, "shift"], "Down", lazy.layout.shuffle_down()),
+    Key([mod, "shift"], "Left", lazy.layout.swap_left()),
+    Key([mod, "shift"], "Right", lazy.layout.swap_right()),
+
+# TOGGLE FLOATING LAYOUT
+    Key([mod, "shift"], "space", lazy.window.toggle_floating()),
+
 
     ]
 
@@ -130,7 +137,7 @@ group_names = ["1", "2", "3", "4",]
 group_labels = ["A", "B", "C", "D",]
 #group_labels = ["", "", "", "", "", "", "", "", "", "",]
 
-group_layouts = ["spiral", "monadtall", "monadtall", "monadtall",]
+group_layouts = ["bsp", "spiral", "monadtall", "zoomy",]
 
 for i in range(len(group_names)):
     groups.append(
@@ -175,13 +182,14 @@ layout_theme = init_layout_theme()
 
 
 layouts = [
-    layout.MonadTall(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
-    #layout.MonadWide(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
-    layout.Spiral(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", clockwise=True, ratio=0.5, new_client_position='after_current'),
+    layout.MonadTall(**layout_theme),
+    #layout.MonadWide(**layout_theme),
+    layout.Bsp(**layout_theme, fair=False, grow_amount=4),
+    layout.Spiral(**layout_theme, clockwise=True, ratio=0.5, new_client_position='after_current'),
     layout.Zoomy(margin=6, columnwidth=290),
-    layout.Stack(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", num_stacks=1),
+    layout.Stack(**layout_theme, num_stacks=1),
     #layout.TreeTab(margin=6, border_width=2, bg_color="#1b1b1b", active_fg="#bd93f9", active_bg="#1b1b1b", inactive_fg="#6272a4", inactive_bg="#1b1b1b", font="Product Sans Bold", fontsize=14, margin_left=6, margin_y=6),
-    #layout.Tile(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
+    #layout.Tile(**layout_theme),
     ]
 
 screens = [Screen(top=bar.Gap(29))]
