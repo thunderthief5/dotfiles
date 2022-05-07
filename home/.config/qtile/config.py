@@ -178,10 +178,11 @@ layouts = [
     layout.MonadTall(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
     #layout.MonadWide(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
     layout.Spiral(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", clockwise=True, ratio=0.5, new_client_position='after_current'),
-    layout.Max(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
-]
+    layout.Stack(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b", num_stacks=1),
+    #layout.Tile(margin=6, border_width=2, border_focus="#6272a4", border_normal="#1b1b1b"),
+    ]
 
-screens = [Screen(bottom=bar.Gap(29))]
+screens = [Screen(top=bar.Gap(29))]
 
 # }}}
 
