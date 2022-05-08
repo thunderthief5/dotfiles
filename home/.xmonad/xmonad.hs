@@ -17,7 +17,7 @@ import XMonad.Util.SpawnOnce                                                    
 import XMonad.Hooks.SetWMName                                                         -- Sets the WM name to a given string
 import XMonad.Hooks.ManageDocks                                                       -- Provides tools to automatically manage dock type programs
 import XMonad.Hooks.EwmhDesktops                                                      -- Makes xmonad use the EWMH hints
-import XMonad.Util.EZConfig (additionalKeys, additionalMouseBindings)                 -- Useful helper functions for amending the default configuration
+import XMonad.Util.EZConfig (additionalKeys, additionalKeysP, additionalMouseBindings)                 -- Useful helper functions for amending the default configuration
                                                                                       -- And for parsing keybindings specified in a special (emacs-like) format
 import XMonad.Hooks.ManageHelpers(doFullFloat, doCenterFloat, isFullscreen, isDialog) -- Provides helper functions to be used in manageHook
 
@@ -28,6 +28,8 @@ import XMonad.Layout.Spacing                                                    
 import XMonad.Layout.Gaps                                                             -- Create manually-sized gaps, support for toggling gaps on and off.
 import XMonad.Hooks.InsertPosition                                                    -- Configure where new windows should be added and which window should be focused.
 import XMonad.Actions.CycleWS                                                         -- Cycle/Move windows b/w workspaces and screens
+import XMonad.Layout.MultiToggle                                                      -- Dynamically apply and unapply transformers to your window layout
+import XMonad.Layout.MultiToggle.Instances                                            -- Extension of MultiToggle
 
 -- }}}
 
@@ -118,8 +120,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,                              xK_n     ), sendMessage FocusParent)
     , ((modm .|. controlMask,              xK_n     ), sendMessage SelectNode)
     , ((modm .|. shiftMask,                xK_n     ), sendMessage MoveNode)
-    , ((modm .|. shiftMask .|. controlMask , xK_j   ), sendMessage $ SplitShift Prev)
-    , ((modm .|. shiftMask .|. controlMask , xK_k   ), sendMessage $ SplitShift Next)
+    , ((modm .|. shiftMask .|. controlMask, xK_j    ), sendMessage $ SplitShift Prev)
+    , ((modm .|. shiftMask .|. controlMask, xK_k    ), sendMessage $ SplitShift Next)
 
     -- ResizableTile keybindings
     , ((modm .|. mod1Mask,               xK_Down    ), sendMessage MirrorShrink)
@@ -131,6 +133,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask,                 xK_Right),  shiftToNext >> nextWS)
     , ((modm .|. shiftMask,                 xK_Left ),  shiftToPrev >> prevWS)
 
+    -- Toggle no-borders fullscreen
+    , ((modm, xK_f), sendMessage $ Toggle NBFULL)
 
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
@@ -142,10 +146,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. shiftMask, xK_x     ), io (exitWith ExitSuccess))
 
     -- Restart xmonad
-    , ((modm .|. shiftMask, xK_r     ), spawn "xmonad --recompile; xmonad --restart")
+    -- , ((modm .|. shiftMask, xK_r     ), spawn "xmonad --recompile; xmonad --restart")
 
-    -- Run xmessage with a summary of the default keybindings (useful for beginners)
-    , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     ]
     ++
 
@@ -190,7 +192,7 @@ myMouseBindings (XConfig {XMonad.modMask = modm}) = M.fromList $
 
 -- {{{ Layouts:
 
-myLayout = spacingRaw False (Border 0 3 3 3) True (Border 6 3 3 3) True $ avoidStruts (ResizableTall 1 (3/100) (1/2) [] ||| emptyBSP ||| Full)
+myLayout = spacingRaw False (Border 0 3 3 3) True (Border 6 3 3 3) True $ avoidStruts $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) $ ResizableTall 1 (3/100) (1/2) [] ||| emptyBSP ||| Full
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
@@ -227,6 +229,18 @@ myManageHook = composeAll
     , className =? "Urxvt"                   --> doFloat
     , className =? "Blueman-manager"         --> doFloat
     , className =? "Software-properties-gtk" --> doFloat
+    , className =? "mpv"                     --> doFloat
+    , isFullscreen -->  doFullFloat
+    ,className =? "confirm"                  --> doFloat
+    , className =? "file_progress"           --> doFloat
+    , className =? "dialog"                  --> doFloat
+    , className =? "download"                --> doFloat
+    , className =? "error"                   --> doFloat
+    , className =? "Gimp"                    --> doFloat
+    , className =? "notification"            --> doFloat
+    , className =? "pinentry-gtk-2"          --> doFloat
+    , className =? "splash"                  --> doFloat
+    , className =? "toolbar"                 --> doFloat
     , resource  =? "desktop_window"          --> doIgnore
     , resource  =? "kdesktop"                --> doIgnore ]
 
@@ -303,56 +317,8 @@ defaults = def {
         startupHook        = myStartupHook
     }
 
-
--- | Finally, a copy of the default bindings in simple textual tabular format.
-help :: String
-help = unlines ["The default modifier key is 'alt'. Default keybindings:",
-    "",
-    "-- launching and killing programs",
-    "mod-Shift-Enter  Launch xterminal",
-    "mod-p            Launch dmenu",
-    "mod-Shift-p      Launch gmrun",
-    "mod-Shift-c      Close/kill the focused window",
-    "mod-Space        Rotate through the available layout algorithms",
-    "mod-Shift-Space  Reset the layouts on the current workSpace to default",
-    "mod-n            Resize/refresh viewed windows to the correct size",
-    "",
-    "-- move focus up or down the window stack",
-    "mod-Tab        Move focus to the next window",
-    "mod-Shift-Tab  Move focus to the previous window",
-    "mod-j          Move focus to the next window",
-    "mod-k          Move focus to the previous window",
-    "mod-m          Move focus to the master window",
-    "",
-    "-- modifying the window order",
-    "mod-Return   Swap the focused window and the master window",
-    "mod-Shift-j  Swap the focused window with the next window",
-    "mod-Shift-k  Swap the focused window with the previous window",
-    "",
-    "-- resizing the master/slave ratio",
-    "mod-h  Shrink the master area",
-    "mod-l  Expand the master area",
-    "",
-    "-- floating layer support",
-    "mod-t  Push window back into tiling; unfloat and re-tile it",
-    "",
-    "-- increase or decrease number of windows in the master area",
-    "mod-comma  (mod-,)   Increment the number of windows in the master area",
-    "mod-period (mod-.)   Deincrement the number of windows in the master area",
-    "",
-    "-- quit, or restart",
-    "mod-Shift-q  Quit xmonad",
-    "mod-q        Restart xmonad",
-    "mod-[1..9]   Switch to workSpace N",
-    "",
-    "-- Workspaces & screens",
-    "mod-Shift-[1..9]   Move client to workspace N",
-    "mod-{w,e,r}        Switch to physical/Xinerama screens 1, 2, or 3",
-    "mod-Shift-{w,e,r}  Move client to screen 1, 2, or 3",
-    "",
-    "-- Mouse bindings: default actions bound to mouse events",
-    "mod-button1  Set the window to floating mode and move by dragging",
-    "mod-button2  Raise the window to the top of the stack",
-    "mod-button3  Set the window to floating mode and resize by dragging"]
-
+    `additionalKeysP`
+    [
+    ("M-S-r", spawn "xmonad --recompile; xmonad --restart; notify-send 'Xmonad Reloaded'")
+    ]
 -- }}}
