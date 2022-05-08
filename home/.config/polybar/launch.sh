@@ -64,4 +64,13 @@ case $desktop in
     fi
     ;;
 
+    xmonad|/usr/share/xsessions/xmonad)
+    if type "xrandr" > /dev/null; then
+      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        WIRELESS_INTERFACE=$wifi MONITOR=$m polybar --reload xmobar -c ~/.config/polybar/config.ini &
+      done
+    else
+    polybar --reload xmobar -c ~/.config/polybar/config.ini &
+    fi
+    ;;
 esac
