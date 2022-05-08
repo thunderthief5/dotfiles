@@ -60,8 +60,8 @@
 /home/thunderthief/Music/(K)NoW_NAME/Dorohedoro/Strange Meat Pie.m4a
 /home/thunderthief/Music/League of Legends/RISE/01 RISE.mp3
 /home/thunderthief/Music/LeAnn Rimes/Coyote Ugly/01 Can't Fight The Moonlight.mp3
-/home/thunderthief/Music/Linkin Park/Hybrid Theory (Bonus Edition)/01 In the End.mp3
 /home/thunderthief/Music/Linkin Park/Meteora/13 Numb.mp3
+/home/thunderthief/Music/Linkin Park/Hybrid Theory (Bonus Edition)/01 In the End.mp3
 /home/thunderthief/Music/Linkin Park/Living Things/1-12 Powerless.mp3
 /home/thunderthief/Music/Ludwig Goransson/The Mandalorian_ Season 2 - Vol. 2 (Chapters 13-16) (Original Score)/01 A Friend.mp3
 /home/thunderthief/Music/Ludwig Göransson/The Mandalorian_ Chapter 7 (Original Score)/08 The Mandalorian (Orchestral Version).mp3
@@ -80,17 +80,17 @@
 /home/thunderthief/Music/Mr.Kitty/Time/09 After Dark.mp3
 /home/thunderthief/Music/Natasha Bedingfield/Pocketful of Sunshine/02 Pocketful of Sunshine.mp3
 /home/thunderthief/Music/Notaker/The Storm/01 The Storm.mp3
+/home/thunderthief/Music/Otilia/Bilionera (Radio Edit) - Single/01 Bilionera (Radio Edit).mp3
+/home/thunderthief/Music/Otilia/Diamante/01 Diamante.mp3
+/home/thunderthief/Music/Otilia/Dragoste Sau Nu - Single/01 Dragoste Sau Nu (Radio Edit).mp3
+/home/thunderthief/Music/Otilia/Iubire adevarata/01 Iubire adevarata.mp3
 /home/thunderthief/Music/Otilia/Oh Na NA/Oh Na Na.m4a
+/home/thunderthief/Music/Otilia/Prisionera (Radio Edit) - Single/01 Prisionera (Radio Edit).mp3
 /home/thunderthief/Music/Otilia/French Kiss/French Kiss (Radio Edit).m4a
 /home/thunderthief/Music/Otilia/Russian Dream/Russian Dream.m4a
-/home/thunderthief/Music/Otilia/Bilionera (Radio Edit) - Single/01 Bilionera (Radio Edit).mp3
-/home/thunderthief/Music/Otilia/Dragoste Sau Nu - Single/01 Dragoste Sau Nu (Radio Edit).mp3
 /home/thunderthief/Music/Otilia/On Fire (Radio Edit)/01 On Fire.mp3
 /home/thunderthief/Music/Otilia/Won't Surrender/01 Won't Surrender.mp3
-/home/thunderthief/Music/Otilia/Iubire adevarata/01 Iubire adevarata.mp3
-/home/thunderthief/Music/Otilia/Diamante/01 Diamante.mp3
 /home/thunderthief/Music/Otilia/Wine My Body (Radio Edit)/01 Wine My Body.mp3
-/home/thunderthief/Music/Otilia/Prisionera (Radio Edit) - Single/01 Prisionera (Radio Edit).mp3
 /home/thunderthief/Music/Otilia/Adelante/01 Adelante.mp3
 /home/thunderthief/Music/Otilia/Deli Gebi/01 Otilia (Deli Gibi) (Remix).mp3
 /home/thunderthief/Music/Otilia/Amor Real/Amor Real.m4a
