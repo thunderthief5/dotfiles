@@ -4,28 +4,30 @@
 
 -- {{{ Imports
 
+-- Default imports
 import XMonad
 import Data.Monoid
 import System.Exit
-import XMonad.Util.SpawnOnce
-import XMonad.Hooks.SetWMName
-
-import XMonad.Hooks.ManageDocks
-import XMonad.Hooks.EwmhDesktops
-import XMonad.Util.EZConfig (additionalKeys, additionalMouseBindings)
-import XMonad.Hooks.ManageHelpers(doFullFloat, doCenterFloat, isFullscreen, isDialog)
-
-import XMonad.Layout.ResizableTile
-import XMonad.Layout.Spiral
-import XMonad.Layout.BinarySpacePartition
-import XMonad.Layout.Spacing
-import XMonad.Layout.Gaps
-import XMonad.Hooks.InsertPosition
-
-import XMonad.Actions.CycleWS
 
 import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
+
+-- My imports
+import XMonad.Util.SpawnOnce                                                          -- A module for spawning a command once, and only once
+import XMonad.Hooks.SetWMName                                                         -- Sets the WM name to a given string
+import XMonad.Hooks.ManageDocks                                                       -- Provides tools to automatically manage dock type programs
+import XMonad.Hooks.EwmhDesktops                                                      -- Makes xmonad use the EWMH hints
+import XMonad.Util.EZConfig (additionalKeys, additionalMouseBindings)                 -- Useful helper functions for amending the default configuration
+                                                                                      -- And for parsing keybindings specified in a special (emacs-like) format
+import XMonad.Hooks.ManageHelpers(doFullFloat, doCenterFloat, isFullscreen, isDialog) -- Provides helper functions to be used in manageHook
+
+import XMonad.Layout.ResizableTile                                                    -- More useful tiled layout that allows you to change a width/height of window
+import XMonad.Layout.Spiral                                                           -- A spiral tiling layout
+import XMonad.Layout.BinarySpacePartition                                             -- Layout where new windows will split the focused window in half, based off of BSPWM
+import XMonad.Layout.Spacing                                                          -- Add a configurable amount of space around windows.
+import XMonad.Layout.Gaps                                                             -- Create manually-sized gaps, support for toggling gaps on and off.
+import XMonad.Hooks.InsertPosition                                                    -- Configure where new windows should be added and which window should be focused.
+import XMonad.Actions.CycleWS                                                         -- Cycle/Move windows b/w workspaces and screens
 
 -- }}}
 
@@ -148,8 +150,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     ++
 
     --
-    -- mod-[1..9], Switch to workspace N
-    -- mod-shift-[1..9], Move client to workspace N
+    -- mod-[1..4], Switch to workspace N
+    -- mod-shift-[1..4], Move client to workspace N
     --
     [((m .|. modm, k), windows $ f i)
         | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_4]
