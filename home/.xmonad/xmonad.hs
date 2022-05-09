@@ -13,23 +13,23 @@ import qualified XMonad.StackSet as W
 import qualified Data.Map        as M
 
 -- My imports
-import XMonad.Util.SpawnOnce                                                          -- A module for spawning a command once, and only once
-import XMonad.Hooks.SetWMName                                                         -- Sets the WM name to a given string
-import XMonad.Hooks.ManageDocks                                                       -- Provides tools to automatically manage dock type programs
-import XMonad.Hooks.EwmhDesktops                                                      -- Makes xmonad use the EWMH hints
-import XMonad.Util.EZConfig (additionalKeys, additionalKeysP, additionalMouseBindings)                 -- Useful helper functions for amending the default configuration
-                                                                                      -- And for parsing keybindings specified in a special (emacs-like) format
-import XMonad.Hooks.ManageHelpers(doFullFloat, doCenterFloat, isFullscreen, isDialog) -- Provides helper functions to be used in manageHook
+import XMonad.Util.SpawnOnce                                                            -- A module for spawning a command once, and only once
+import XMonad.Util.EZConfig (additionalKeys, additionalKeysP, additionalMouseBindings)  -- Useful helper functions for amending the default configuration
+                                                                                        -- And for parsing keybindings specified in a special (emacs-like) format
+import XMonad.Hooks.SetWMName                                                           -- Sets the WM name to a given string
+import XMonad.Hooks.ManageDocks                                                         -- Provides tools to automatically manage dock type programs
+import XMonad.Hooks.EwmhDesktops                                                        -- Makes xmonad use the EWMH hints
+import XMonad.Hooks.ManageHelpers(doFullFloat, doCenterFloat, isFullscreen, isDialog)   -- Provides helper functions to be used in manageHook
+import XMonad.Hooks.InsertPosition                                                      -- Configure where new windows should be added and which window should be focused.
 
-import XMonad.Layout.ResizableTile                                                    -- More useful tiled layout that allows you to change a width/height of window
-import XMonad.Layout.Spiral                                                           -- A spiral tiling layout
-import XMonad.Layout.BinarySpacePartition                                             -- Layout where new windows will split the focused window in half, based off of BSPWM
-import XMonad.Layout.Spacing                                                          -- Add a configurable amount of space around windows.
-import XMonad.Layout.Gaps                                                             -- Create manually-sized gaps, support for toggling gaps on and off.
-import XMonad.Hooks.InsertPosition                                                    -- Configure where new windows should be added and which window should be focused.
-import XMonad.Actions.CycleWS                                                         -- Cycle/Move windows b/w workspaces and screens
-import XMonad.Layout.MultiToggle                                                      -- Dynamically apply and unapply transformers to your window layout
-import XMonad.Layout.MultiToggle.Instances                                            -- Extension of MultiToggle
+import XMonad.Actions.CycleWS                                                           -- Cycle/Move windows b/w workspaces and screens
+import XMonad.Layout.ResizableTile                                                      -- More useful tiled layout that allows you to change a width/height of window
+import XMonad.Layout.Spiral                                                             -- A spiral tiling layout
+import XMonad.Layout.BinarySpacePartition                                               -- Layout where new windows will split the focused window in half, based off of BSPWM
+import XMonad.Layout.Spacing                                                            -- Add a configurable amount of space around windows.
+import XMonad.Layout.Gaps                                                               -- Create manually-sized gaps, support for toggling gaps on and off.
+import XMonad.Layout.MultiToggle                                                        -- Dynamically apply and unapply transformers to your window layout
+import XMonad.Layout.MultiToggle.Instances                                              -- Extension of MultiToggle
 
 -- }}}
 
@@ -59,52 +59,52 @@ myFocusedBorderColor = "#6272a4"
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
     -- close focused window
-    [ ((modm .|. shiftMask, xK_q     ), kill)
+    [ ((modm .|. shiftMask,                                   xK_q      ), kill)
 
      -- Rotate through the available layout algorithms
-    , ((modm,               xK_space ), sendMessage NextLayout)
+    , ((modm,                                                 xK_space  ), sendMessage NextLayout)
 
     --  Reset the layouts on the current workspace to default
-    , ((modm .|. shiftMask, xK_space ), setLayout $ XMonad.layoutHook conf)
+    , ((modm .|. shiftMask,                                   xK_space  ), setLayout $ XMonad.layoutHook conf)
 
     -- Resize viewed windows to the correct size
-    , ((modm,               xK_n     ), refresh)
+    , ((modm,                                                 xK_n      ), refresh)
 
     -- Move focus to the next window
-    , ((modm,               xK_Tab   ), windows W.focusDown)
+    , ((modm,                                                 xK_Tab    ), windows W.focusDown)
 
     -- Move focus to the next window
-    , ((modm,               xK_j     ), windows W.focusDown)
+    , ((modm,                                                 xK_Down   ), windows W.focusDown)
 
     -- Move focus to the previous window
-    , ((modm,               xK_k     ), windows W.focusUp  )
+    , ((modm,                                                 xK_Up     ), windows W.focusUp)
 
     -- Move focus to the master window
-    , ((modm,               xK_m     ), windows W.focusMaster  )
+    , ((modm,                                                 xK_m      ), windows W.focusMaster)
 
     -- Swap the focused window and the master window
-    , ((modm .|. shiftMask, xK_m     ), windows W.swapMaster)
+    , ((modm .|. shiftMask,                                   xK_m      ), windows W.swapMaster)
 
     -- Swap the focused window with the next window
-    , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  )
+    , ((modm .|. shiftMask,                                   xK_Down   ), windows W.swapDown)
 
     -- Swap the focused window with the previous window
-    , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    )
+    , ((modm .|. shiftMask,                                   xK_Up     ), windows W.swapUp)
 
     -- Shrink the master area
-    , ((modm .|. mod1Mask,               xK_Left     ), sendMessage Shrink)
+    , ((modm .|. mod1Mask,                                    xK_Left   ), sendMessage Shrink)
 
     -- Expand the master area
-    , ((modm .|. mod1Mask,               xK_Right     ), sendMessage Expand)
+    , ((modm .|. mod1Mask,                                    xK_Right  ), sendMessage Expand)
 
     -- Push window back into tiling
-    , ((modm,               xK_t     ), withFocused $ windows . W.sink)
+    , ((modm,                                                 xK_t      ), withFocused $ windows . W.sink)
 
     -- Increment the number of windows in the master area
-    , ((modm              , xK_comma ), sendMessage (IncMasterN 1))
+    , ((modm              ,                                   xK_comma  ), sendMessage (IncMasterN 1))
 
     -- Deincrement the number of windows in the master area
-    , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
+    , ((modm              ,                                   xK_period ), sendMessage (IncMasterN (-1)))
 
     -- BSP Keybindings
     , ((modm .|. mod1Mask,                 xK_l     ), sendMessage $ ExpandTowards R)
@@ -230,8 +230,7 @@ myManageHook = composeAll
     , className =? "Blueman-manager"         --> doFloat
     , className =? "Software-properties-gtk" --> doFloat
     , className =? "mpv"                     --> doFloat
-    , isFullscreen -->  doFullFloat
-    ,className =? "confirm"                  --> doFloat
+    , className =? "confirm"                 --> doFloat
     , className =? "file_progress"           --> doFloat
     , className =? "dialog"                  --> doFloat
     , className =? "download"                --> doFloat
@@ -242,7 +241,9 @@ myManageHook = composeAll
     , className =? "splash"                  --> doFloat
     , className =? "toolbar"                 --> doFloat
     , resource  =? "desktop_window"          --> doIgnore
-    , resource  =? "kdesktop"                --> doIgnore ]
+    , resource  =? "kdesktop"                --> doIgnore
+    , isFullscreen -->  doFullFloat
+    ]
 
 -- }}}
 
@@ -312,7 +313,7 @@ defaults = def {
       -- hooks, layouts
         layoutHook         = myLayout,
         manageHook         = insertPosition End Newer <+> myManageHook,
-        handleEventHook    = myEventHook <+> fullscreenEventHook,
+        handleEventHook    = myEventHook <+> ewmhDesktopsEventHook <+> fullscreenEventHook,
         logHook            = myLogHook,
         startupHook        = myStartupHook
     }
