@@ -122,6 +122,10 @@ keys = [
 # TOGGLE FLOATING LAYOUT
     Key([mod, "shift"], "space", lazy.window.toggle_floating()),
 
+# COLUMN LAYOUT
+    Key([mod, "shift", "control"], "h", lazy.layout.swap_column_left()),
+    Key([mod, "shift", "control"], "l", lazy.layout.swap_column_right()),
+    Key([mod], "s", lazy.layout.toggle_split()),
 
     ]
 
@@ -136,7 +140,7 @@ group_names = ["1", "2", "3", "4",]
 
 group_labels = ["A", "B", "C", "D",]
 
-group_layouts = ["bsp", "spiral", "monadtall", "zoomy",]
+group_layouts = ["columns", "columns", "columns", "zoomy",]
 
 for i in range(len(group_names)):
     groups.append(
@@ -170,6 +174,10 @@ for i in groups:
         Key([mod, "shift"], i.name, lazy.window.togroup(i.name) , lazy.group[i.name].toscreen()),
     ])
 
+# }}}
+
+# {{{ Layouts
+
 def init_layout_theme():
     return {"margin":6,
             "border_width":2,
@@ -181,14 +189,18 @@ layout_theme = init_layout_theme()
 
 
 layouts = [
-    layout.MonadTall(**layout_theme),
-    #layout.MonadWide(**layout_theme),
-    layout.Bsp(**layout_theme, fair=False, grow_amount=4),
-    layout.Spiral(**layout_theme, clockwise=True, ratio=0.5, new_client_position='after_current'),
+    layout.Columns(**layout_theme, border_focus_stack="#bd93f9", border_normal_stack="#1b1b1b", insert_position=1 ),
     layout.Zoomy(margin=6, columnwidth=290),
-    layout.Stack(**layout_theme, num_stacks=1),
+    layout.Max(**layout_theme)
+    #layout.Stack(**layout_theme, num_stacks=1, autosplit=False),
+    #layout.Tile(**layout_theme, add_after_last=True, ratio=0.55, max_ratio=0.8, min_ratio=0.2, shift_windows=True),
+    #layout.MonadTall(**layout_theme),
+    #layout.MonadWide(**layout_theme),
+    #layout.Bsp(**layout_theme, fair=False, grow_amount=4),
+    #layout.Spiral(**layout_theme, clockwise=True, ratio=0.5, new_client_position='after_current'),
     #layout.TreeTab(margin=6, border_width=2, bg_color="#1b1b1b", active_fg="#bd93f9", active_bg="#1b1b1b", inactive_fg="#6272a4", inactive_bg="#1b1b1b", font="Product Sans Bold", fontsize=14, margin_left=6, margin_y=6),
-    #layout.Tile(**layout_theme),
+    #layout.RatioTile(**layout_theme),
+
     ]
 
 screens = [Screen(top=bar.Gap(29))]
