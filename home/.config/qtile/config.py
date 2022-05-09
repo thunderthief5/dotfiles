@@ -75,24 +75,24 @@ keys = [
 
 
 # RESIZE UP, DOWN, LEFT, RIGHT
-    Key([mod, "mod1"], "l",
+    Key([mod, "mod1"], "Right",
         lazy.layout.grow_right(),
         lazy.layout.grow(),
         lazy.layout.increase_ratio(),
         lazy.layout.delete(),
         ),
-    Key([mod, "mod1"], "h",
+    Key([mod, "mod1"], "Left",
         lazy.layout.grow_left(),
         lazy.layout.shrink(),
         lazy.layout.decrease_ratio(),
         lazy.layout.add(),
         ),
-    Key([mod, "mod1"], "k",
+    Key([mod, "mod1"], "Up",
         lazy.layout.grow_up(),
         lazy.layout.grow(),
         lazy.layout.decrease_nmaster(),
         ),
-    Key([mod, "mod1"], "j",
+    Key([mod, "mod1"], "Down",
         lazy.layout.grow_down(),
         lazy.layout.shrink(),
         lazy.layout.increase_nmaster(),
@@ -135,7 +135,6 @@ groups = []
 group_names = ["1", "2", "3", "4",]
 
 group_labels = ["A", "B", "C", "D",]
-#group_labels = ["", "", "", "", "", "", "", "", "", "",]
 
 group_layouts = ["bsp", "spiral", "monadtall", "zoomy",]
 
