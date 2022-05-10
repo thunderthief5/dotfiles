@@ -19,7 +19,7 @@ I use `stow` (GNU Stow). It is available on almost every distro.
 ## My most used packages
 
 **DE:** Gnome *Whenever I want to take a break from ricing*   
-**WM:** bspwm, i3, openbox, herbstluftwm, spectrwm, dwm, qtile, xmonad
+**WM:** bspwm, i3, openbox, herbstluftwm, spectrwm, dwm, qtile, xmonad  
 **Text Editor:** vim, neovim, gedit  
 **Terminal Emulator:** gnome-terminal, rxvt-unicode, xterm, alacritty  
 **Shell:** bash, zsh, fish  
