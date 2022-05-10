@@ -74,10 +74,10 @@ set swapfile
 set undofile
 set backup
 
-set backupdir=$HOME/.cache/nvim/tmp/backup
-set dir=$HOME/.cache/nvim/tmp/swap
-set viewdir=$HOME/.cache/nvim/tmp/view
-set undodir=$HOME/.cache/nvim/tmp/undo
+set backupdir=$HOME/.cache/nvim/backup
+set dir=$HOME/.cache/nvim/swap
+set viewdir=$HOME/.cache/nvim/view
+set undodir=$HOME/.cache/nvim/undo
 
 if !isdirectory(&backupdir) | call mkdir(&backupdir, 'p', 0700) | endif
 if !isdirectory(&dir)       | call mkdir(&dir, 'p', 0700)       | endif

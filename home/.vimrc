@@ -168,15 +168,15 @@ set undofile
 set backup
 
 if has ('nvim')
-    set backupdir=$HOME/.cache/nvim/tmp/backup
-    set dir=$HOME/.cache/nvim/tmp/swap
-    set viewdir=$HOME/.cache/nvim/tmp/view
-    set undodir=$HOME/.cache/nvim/tmp/undo
+    set backupdir=$HOME/.cache/nvim/backup
+    set dir=$HOME/.cache/nvim/swap
+    set viewdir=$HOME/.cache/nvim/view
+    set undodir=$HOME/.cache/nvim/undo
   else
-    set backupdir=$HOME/.cache/vim/tmp/backup
-    set dir=$HOME/.cache/vim/tmp/swap
-    set viewdir=$HOME/.cache/vim/tmp/view
-    set undodir=$HOME/.cache/vim/tmp/undo
+    set backupdir=$HOME/.cache/vim/backup
+    set dir=$HOME/.cache/vim/swap
+    set viewdir=$HOME/.cache/vim/view
+    set undodir=$HOME/.cache/vim/undo
 endif
 
 
@@ -187,7 +187,7 @@ if !isdirectory(&undodir)   | call mkdir(&undodir, 'p', 0700)   | endif
 
 " Store temporary files in ~/.vim/tmp
 if !has('nvim')
- set viminfo+=n~/.cache/vim/tmp/viminfo
+ set viminfo+=n~/.cache/vim/viminfo
 endif
 
 " }}}

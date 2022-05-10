@@ -188,7 +188,7 @@ def init_layout_theme():
 layout_theme = init_layout_theme()
 
 layouts = [
-    layout.Columns(**layout_theme, border_focus_stack="#bd93f9", border_normal_stack="#1b1b1b", insert_position=1 ),
+    layout.Columns(**layout_theme, border_focus_stack="#bd93f9", border_normal_stack="#1b1b1b", insert_position=1, grow_amount=1),
     layout.Zoomy(margin=6, columnwidth=290),
     layout.Max(**layout_theme),
     #layout.Stack(**layout_theme, num_stacks=1, autosplit=False),
