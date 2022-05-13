@@ -11,7 +11,7 @@ disabled = false  #separates the prompt into two lines
 #error_symbol   = "[\uf054\uf053](bold red)"
 #vicmd_symbol   = "[\ue62b](bold blue)"
 
-success_symbol = "[](bold purple)"
+success_symbol = "[](bold green)"
 error_symbol   = "[](bold red)"
 vicmd_symbol   = "[\ue62b](bold blue)"
 
@@ -29,7 +29,7 @@ disabled    = true
 show_always = true
 
 [time]
-disabled    = false
+disabled    = true
 format      = '[\[$time\]](bold cyan) '
 time_format = "%H:%M"
 
