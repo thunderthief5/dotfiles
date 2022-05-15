@@ -5,7 +5,7 @@
     highlight: bold italic;
     scrollbar: true;
     border-radius: 4px;
-    font: "Isonorm 18";
+    font: "UbuntuCondensed 18";
     fixed-num-lines: false;
 }
 

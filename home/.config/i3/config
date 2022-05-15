@@ -34,7 +34,7 @@ for_window [class=".*"] title_format "<span> </span>"
 
 ## Dracula
 # class                 border  bground text    indicator child_border
-client.focused          #1b1b1b #1b1b1b #bd93f9 #50fa7b   #bd93f9
+client.focused          #1b1b1b #1b1b1b #6272a4 #50fa7b   #6272a4
 client.focused_inactive #1b1b1b #282828 #6272a4 #50fa7b   #1b1b1b
 client.unfocused        #1b1b1b #2E3440 #6272a4 #50fa7b   #1b1b1b
 client.urgent           #1b1b1b #FF5555 #Fdfdfd #FF5555   #FF5555

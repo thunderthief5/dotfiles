@@ -88,4 +88,14 @@ Resolution(){
 }
 
 
-echo -e "  $(Clock) $(Date)\n  $(User)@$(Host)\n  $(Release)\n  $(Kernel)\n  pkgs $(Packages), flatpaks $(Flatpaks)\n  $(WM)\n  $(Uptime)\n  $(RAM)\n  $(CPU)\n  $(Resolution)\n Main: $(Bat0)%, Bay: $(Bat1)%" | rofi -dmenu -p $USER
+echo -e "$(Clock) $(Date)
+$(Host)
+$(Release)
+$(Kernel)
+$(Packages) (pkgs), $(Flatpaks) (flatpaks)
+$(WM)
+$(Uptime)
+$(RAM)
+$(CPU)
+$(Resolution)
+Main $(Bat0)%, Bay $(Bat1)%" | rofi -dmenu -p $USER
