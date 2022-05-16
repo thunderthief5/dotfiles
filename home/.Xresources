@@ -370,7 +370,7 @@ URxvt.geometry: 100x40
 URxvt.internalBorder: 12
 
 URxvt.cursorBlink: true
-URxvt.cursorUnderline: true
+URxvt.cursorUnderline: false
 
 URxvt.saveline: 10000
 URxvt.scrollBar: false
