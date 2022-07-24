@@ -308,41 +308,73 @@
 
 ! {{{{ Bash
 
-*.foreground:   #eceff4
-*.background:   #1b1b1b
-*.cursorColor:  #eceff4
+!*.foreground:   #eceff4
+!*.background:   #1b1b1b
+!*.cursorColor:  #eceff4
+!
+!! black
+!*.color0:       #292d3e
+!*.color8:       #959dcb
+!
+!! red
+!*.color1:       #f07178
+!*.color9:       #f07178
+!
+!! green
+!*.color2:       #c3e88d
+!*.color10:      #c3e88d
+!
+!! yellow
+!*.color3:       #ffcb6b
+!*.color11:      #ff5572
+!
+!! blue
+!*.color4:       #82aaff
+!*.color12:      #82aaff
+!
+!! magenta
+!*.color5:       #c792ea
+!*.color13:      #ffcb6b
+!
+!! cyan
+!*.color6:       #60adec
+!*.color14:      #676e95
+!
+!! white
+!*.color7:       #abb2bf
+!*.color15:      #fffefe
 
-! black
-*.color0:       #292d3e
-*.color8:       #959dcb
+! }}}}
 
-! red
-*.color1:       #f07178
-*.color9:       #f07178
+! {{{{ Everblush
 
-! green
-*.color2:       #c3e88d
-*.color10:      #c3e88d
+*background: #1b1b1b
+*foreground: #dadada
 
-! yellow
-*.color3:       #ffcb6b
-*.color11:      #ff5572
-
-! blue
-*.color4:       #82aaff
-*.color12:      #82aaff
-
-! magenta
-*.color5:       #c792ea
-*.color13:      #ffcb6b
-
-! cyan
-*.color6:       #60adec
-*.color14:      #676e95
-
-! white
-*.color7:       #abb2bf
-*.color15:      #fffefe
+! Black + DarkGrey
+*color0:  #232a2d
+*color8:  #2d3437
+! DarkRed + Red
+*color1:  #e57474
+*color9:  #ef7e7e
+! DarkGreen + Green
+*color2:  #8ccf7e
+*color10: #96d988
+! DarkYellow + Yellow
+*color3:  #e5c76b
+*color11: #f4d67a
+! DarkBlue + Blue
+*color4:  #67b0e8
+*color12: #71baf2
+! DarkMagenta + Magenta
+*color5:  #c47fd5
+*color13: #ce89df
+! DarkCyan + Cyan
+*color6:  #6cbfbf
+*color14: #67cbe7
+! LightGrey + White
+*color7:  #b3b9b8
+*color15: #bdc3c2
 
 ! }}}}
 
