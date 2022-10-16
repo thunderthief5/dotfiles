@@ -8,7 +8,7 @@
 
 window:
   dimensions:
-    columns: 90
+    columns: 125
     lines: 36
   padding:
     x: 10
@@ -36,14 +36,14 @@ font:
   italic:
     family: ShureTechMono Nerd Font Mono
     style: Italic
-  size: 8.5
+  size: 11
   offset:
     x: 0
     y: 0
   glyph_offset:
     x: 0
     y: 0
-  use_thin_strokes: false
+  #use_thin_strokes: false
   debug:
     persistent_logging: false
 draw_bold_text_with_bright_colors: true
