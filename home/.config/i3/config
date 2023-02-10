@@ -67,7 +67,7 @@ bindsym Mod1+Ctrl+t       exec xterm
 bindsym $mod+Shift+Return exec st
 
 # start Rofi
-bindsym $mod+d       $execute rofi -modi drun -show drun -display-drun ''
+bindsym $mod+d       $execute rofi -modi drun -show drun -display-drun 'Apps'
 bindsym $mod+w       $execute rofi -modi window -show window -display-window ''
 bindsym $mod+Shift+w $execute rofi -modi window -show windowcd -display-windowcd ''
 bindsym $mod+Shift+d $execute ~/.config/rofi/scripts/rofimenu

@@ -356,7 +356,7 @@
     <!-- Rofi commands -->
     <keybind key="W-d">
       <action name="Execute">
-        <command>rofi -modi drun -show drun -display-drun '&#xF3AB;'
+        <command>rofi -modi drun -show drun -display-drun 'Apps'
 </command>
       </action>
     </keybind>

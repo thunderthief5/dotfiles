@@ -140,10 +140,10 @@ ctrl + alt + t
 
 # dmenu
 super + d
-        rofi -modi drun -show drun -display-drun ''
+        rofi -modi drun -show drun -display-drun 'Apps'
 super + shift + d
         ~/.config/rofi/scripts/rofimenu
-        #dmenu_run -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=14 -p ''
+        #dmenu_run -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=14 -p 'Apps'
 
 #window switcher
 super + w

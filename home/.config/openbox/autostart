@@ -17,6 +17,7 @@ plank &
 picom &
 xsetroot -cursor_name left_ptr &
 nm-applet &
+/usr/libexec/polkit-gnome-authentication-agent-1 &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 ffplay -nodisp -autoexit -loglevel quiet ~/.local/share/sounds/Startup-XboxOne.mp3 &

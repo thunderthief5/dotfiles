@@ -19,7 +19,7 @@
 
 ### }}}
 
-DEFAULT_IMGS="$HOME/.config/blurlock/backgrounds/1600x900"
+DEFAULT_IMGS="$HOME/.config/blurlock/backgrounds/1920x1080"
 
 if [[ -z $1 ]] ; then
     img_dir=$DEFAULT_IMGS
