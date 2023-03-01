@@ -98,12 +98,12 @@ pcs() { for i in {0..7}; do echo -en "\e[${1}$((30+$i))m\u2580 \e[0m"; done; }
 
 cat <<EOF
 
-${c0}${white} ┏┓               ${c0}${blue}  USER${reset}       ${c0}${violet}${user}${reset}
-${c0}${white} ┃┃               ${c0}${blue}  DISTRO     ${c0}${red}${distro}${reset}
-${c0}${white} ┃┃╋╋┏┳━┓┏┓┏┳┓┏┓  ${c0}${blue}  KERNEL     ${c0}${yellow}${kernel}${reset}
-${c0}${white} ┃┃╋┏╋┫┏┓┫┃┃┣╋╋┛  ${c0}${blue}  UPTIME     ${c0}${cyan}${uptime}${reset}
-${c0}${white} ┃┗━┛┃┃┃┃┃┗┛┣╋╋┓  ${c0}${blue}  ${envtype}         ${c0}${orange}${WM}${reset}
-${c0}${white} ┗━━━┻┻┛┗┻━━┻┛┗┛  ${c0}${blue}  SHELL      ${c0}${green}${shell}${reset}
+${c0}${green} ┏┓               ${c0}${blue}  USER${reset}       ${c0}${violet}${user}${reset}
+${c0}${green} ┃┃               ${c0}${blue}  DISTRO     ${c0}${red}${distro}${reset}
+${c0}${green} ┃┃╋╋┏┳━┓┏┓┏┳┓┏┓  ${c0}${blue}  KERNEL     ${c0}${yellow}${kernel}${reset}
+${c0}${green} ┃┃╋┏╋┫┏┓┫┃┃┣╋╋┛  ${c0}${blue}  UPTIME     ${c0}${cyan}${uptime}${reset}
+${c0}${green} ┃┗━┛┃┃┃┃┃┗┛┣╋╋┓  ${c0}${blue}  ${envtype}         ${c0}${orange}${WM}${reset}
+${c0}${green} ┗━━━┻┻┛┗┻━━┻┛┗┛  ${c0}${blue}  SHELL      ${c0}${green}${shell}${reset}
  $(pcs)   ${c0}${blue}PACKAGES   ${c0}${blue}${packages}${reset}
 EOF
 

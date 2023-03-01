@@ -1,12 +1,24 @@
 /home/thunderthief/Music/AC_DC/Back In Black/06 Back In Black.mp3
 /home/thunderthief/Music/Adele/Skyfall/01 Skyfall.mp3
 /home/thunderthief/Music/Alicia Keys/As I Am (Expanded Edition)/01 Another Way to Die.mp3
+/home/thunderthief/Music/Anirudh Ravichander/3 (Original Motion Picture Soundtrack)/01 Why This Kolaveri Di_.mp3
+/home/thunderthief/Music/Anirudh Ravichander/Maari (Original Motion Picture Soundtrack)/01 Don'u Don'u Don'u.mp3
+/home/thunderthief/Music/Anirudh Ravichander/Vikram (Original Background Score)/01 Porkanda Singam EDM Version (Additional Song).mp3
+/home/thunderthief/Music/Anirudh Ravichander/Vikram (Original Motion Picture Soundtrack)/01 Once Upon a Time.mp3
+/home/thunderthief/Music/Anirudh Ravichander/Vikram (Original Motion Picture Soundtrack)/01 Pathala Pathala.mp3
+/home/thunderthief/Music/Anirudh Ravichander/Vikram (Original Motion Picture Soundtrack)/01 Vikram.mp3
+/home/thunderthief/Music/Anirudh Ravichander & Alisha Thomas/Maari (Original Motion Picture Soundtrack)/03 Don'u Don'u Don'u.m4a
+/home/thunderthief/Music/Anirudh Ravichander & Jonita Gandhi/Arabic Kuthu (From _Beast_) - Single/01 Arabic Kuthu (From _Beast_).m4a
 /home/thunderthief/Music/Anita Ward/Songs of Love/01 Ring My Bell.mp3
+/home/thunderthief/Music/Anurag Kulkarni/Pranavalaya (From _Shyam Singha Roy_) - Single/01 Pranavalaya (From _Shyam Singha Roy_).mp3
+/home/thunderthief/Music/Anurag Kulkarni/Shyam Singha Roy (Original Motion Picture Soundtrack)/01 Rise of Shyam.mp3
 /home/thunderthief/Music/Apparat/The Devil's Walk/Goodbye.mp3
 /home/thunderthief/Music/Ariana Grande/Dangerous Woman/02 Dangerous Woman.mp3
+/home/thunderthief/Music/A.R. Rahman/Adheeraa (From _Cobra_)/01 Adheeraa (From _Cobra_).mp3
 /home/thunderthief/Music/Audiomachine/We Are Gods - Single/01 We Are Gods.mp3
 /home/thunderthief/Music/AWOLNATION/Megalithic Symphony/10 Sail.mp3
 /home/thunderthief/Music/Backfrom84/Sleepless Nights/Hollywood Dreams.mp3
+/home/thunderthief/Music/Billie Eilish/No Time To Die (Original Motion Picture Soundtrack)/21 No Time To Die.m4a
 /home/thunderthief/Music/blasterNOX/Midsommar/Midsommar- Maypole Dance Song.mp3
 /home/thunderthief/Music/Bonnie Tyler/Heaven & Hell/01 Holding Out for a Hero.mp3
 /home/thunderthief/Music/Britney Spears/_..Baby One More Time/01 Baby One More Time.mp3
@@ -31,6 +43,7 @@
 /home/thunderthief/Music/Britney Spears/Slumber Party (feat. Tinashe) [Remixes] - EP/Slumber Party (feat. Tinashe).m4a
 /home/thunderthief/Music/Carpenter Brut/TRILOGY/01 Turbo Killer.mp3
 /home/thunderthief/Music/Carpenter Brut/Blood Machines - Original Motion Picture Soundtrack/01 Blood Machines Theme.mp3
+/home/thunderthief/Music/Chirrantan Bhatt/Bimbisara (Original Motion Picture Soundtrack)/01 Eeshwarude.mp3
 /home/thunderthief/Music/Chris Benstead/Wrath of Man (Original Motion Picture Soundtrack)/01 Liver Lungs Spleen Heart.mp3
 /home/thunderthief/Music/Chris Cornell/Carry On/01 You Know My Name.mp3
 /home/thunderthief/Music/Crystal King/Fist of the North Star/Ai wo Torimodose!! (Instrumental) [Extended].m4a
@@ -47,10 +60,14 @@
 /home/thunderthief/Music/Friedrich Habetler/SSJ 3 Theme/01 SSJ 3 Theme.mp3
 /home/thunderthief/Music/Friedrich Habetler/Vegeta's Super Saiyan Theme/01 Vegeta's Super Saiyan Theme.mp3
 /home/thunderthief/Music/Gloria Gaynor/20th Century Masters - The Millennium Collection_ The Best of Gloria Gaynor/11 I Will Survive.mp3
+/home/thunderthief/Music/G. V. Prakash Kumar, Shweta Mohan & Saraswati Putra Ramajogayya Sastry/Mastaaru Mastaaru (From _Sir_) - Single/01 Mastaaru Mastaaru (From _Sir_).m4a
+/home/thunderthief/Music/Harshika Gudi/Keshava (Original Motion Picture Soundtrack)/01 Kaala Bhairava Ashtakam, Pt. 1.m4a
 /home/thunderthief/Music/Junkie XL/Zack Snyder's Justice League/The Flash Theme (At The Speed of Force).mp3
 /home/thunderthief/Music/Junkie XL/Zack Snyder's Justice League/The Flash Theme (At The Speed of Force)  feat. CW Flash Theme.mp3
 /home/thunderthief/Music/Justice/Justice/03 D.A.N.C.E.mp3
+/home/thunderthief/Music/Kaala Bhairava/Krishna Trance (From _Karthikeya 2_) - Single/01 Krishna Trance (From _Karthikeya 2_).m4a
 /home/thunderthief/Music/Kaleida/Think - EP/01 Think.mp3
+/home/thunderthief/Music/Karthik/Lucifer (Original Motion Picture Soundtrack)/01 Kadavule Pole.mp3
 /home/thunderthief/Music/Katie Herzig/Hey Na Na/01 Hey Na Na.mp3
 /home/thunderthief/Music/Kehlani/Suicide Squad_ The Album/01 Gangsta.mp3
 /home/thunderthief/Music/Kemar L1fam/C'est le début de la faim/Le mot de la faim.m4a
@@ -77,6 +94,9 @@
 /home/thunderthief/Music/MILCK/Devil Devil - Single/01 Devil Devil.mp3
 /home/thunderthief/Music/Minutes Til Midnight/Bulletproof Dreams/01 Gospel of the Throttle (Drifters Op Remix).mp3
 /home/thunderthief/Music/MKTO/Bad Girls EP/Bad Girls.mp3
+/home/thunderthief/Music/M. M. Keeravani/Bimbisara (Original Motion Picture Soundtrack)/01 Neetho Unte Chalu.mp3
+/home/thunderthief/Music/M. M. Keeravani/Bimbisara (Original Motion Picture Soundtrack)/01 Vijayaho.mp3
+/home/thunderthief/Music/Mohit Chauhan/Rockstar/Sadda Haq.m4a
 /home/thunderthief/Music/Mr.Kitty/Time/09 After Dark.mp3
 /home/thunderthief/Music/Natasha Bedingfield/Pocketful of Sunshine/02 Pocketful of Sunshine.mp3
 /home/thunderthief/Music/Notaker/The Storm/01 The Storm.mp3
@@ -96,14 +116,18 @@
 /home/thunderthief/Music/Otilia/Amor Real/Amor Real.m4a
 /home/thunderthief/Music/Otilia/Azar/Azar.m4a
 /home/thunderthief/Music/Otilia/Somebody to Love/Somebody to Love.m4a
+/home/thunderthief/Music/Otilia/Seu Corpo/01 Seu Corpo.mp3
 /home/thunderthief/Music/Paramore/After Laughter/01 Hard Times.mp3
 /home/thunderthief/Music/Pat Benatar/Ultimate Collection/01 Heartbreaker.mp3
 /home/thunderthief/Music/Pogo/Weightless/Data & Picard.mp3
 /home/thunderthief/Music/Pogo/Star Charts/01 Hermione Mix.mp3
+/home/thunderthief/Music/Pradeep Kumar/Jaanu (Original Motion Picture Soundtrack) - EP/02 Life Of Ram.m4a
+/home/thunderthief/Music/Prudhvi Chandra/God Father (Original Motion Picture Soundtrack)/01 Najabhaja.mp3
 /home/thunderthief/Music/Real/19_/01 Kagerou.mp3
 /home/thunderthief/Music/Rick and Morty/Rick and Morty_ Season 5/Battle of Blood Ridge.m4a
 /home/thunderthief/Music/Rick and Morty/Don't Look Back/01 Don't Look Back.mp3
 /home/thunderthief/Music/Safari Riot/Where Is My Mind (feat. Grayson Sanders) - Single/Where Is My Mind (feat. Grayson Sanders).m4a
+/home/thunderthief/Music/_Sai Vignesh/Kantara/Varaha Roopam.m4a
 /home/thunderthief/Music/Sam Smith/Writing's On The Wall/01 Writing's On The Wall.mp3
 /home/thunderthief/Music/Samuel Kim/Loki/Loki Theme EPIC GLORIOUS VERSION.mp3
 /home/thunderthief/Music/Samuel Kim/Star Wars_ The Dark Side Collection/Star Wars Duel of The Fates x Kai's Theme EPIC SAMURAI VERSION.mp3
@@ -152,15 +176,26 @@
 /home/thunderthief/Music/Samuel Kim/What's Up Danger/01 What's Up Danger (Epic Orchestral Remix).mp3
 /home/thunderthief/Music/Samuel Kim/Loki/Loki Theme V2 EPIC GLORIOUS VERSION.mp3
 /home/thunderthief/Music/Shankar Mahadevan, Siddharth Mahadevan, Shivam Mahadevan & Thaman S_/Akhanda/01 Akhanda - Title Song.m4a
+/home/thunderthief/Music/Shruti Pathak/Luck/03 Jee Le.m4a
+/home/thunderthief/Music/Silambarasan TR/Thee Thalapathy (From _Varisu_)/01 Thee Thalapathy (From _Varisu_).m4a
 /home/thunderthief/Music/Steve Miller Band/Fly Like An Eagle/01 Fly Like An Eagle.mp3
 /home/thunderthief/Music/Survivor/Eye of the Tiger (Remastered)/01 Eye of the Tiger.mp3
+/home/thunderthief/Music/Sushin Shyam/Bheeshma Parvam/01 Bheeshma Parvam (Trailer Theme).mp3
+/home/thunderthief/Music/Sushin Shyam/Bheeshma Parvam (Original Motion Picture Soundtrack)/01 Be Notorious (Title Track).mp3
+/home/thunderthief/Music/Sushin Shyam/Bheeshma Parvam (Original Motion Picture Soundtrack)/01 Bheeshma Parvam (Teaser Theme).mp3
+/home/thunderthief/Music/Sushin Shyam/Bheeshma Parvam (Original Motion Picture Soundtrack)/01 Rathipushpam.mp3
 /home/thunderthief/Music/Susumu Hirasawa/Paprika/Parade.mp3
 /home/thunderthief/Music/Susumu Hirasawa/Berserk/Gutsu.mp3
 /home/thunderthief/Music/TeamFourStar/Day of Fate ~Spirit VS Spirit~ (feat. Paulo Cuevas & Ani Djirdjirian)/01 Day of Fate ~Spirit VS Spirit~ (feat. Paulo Cuevas & Ani Djirdjirian).mp3
+/home/thunderthief/Music/Thaman S/God Father (From _God Father_) - Single/01 God Father (From _God Father_).mp3
 /home/thunderthief/Music/The Score/Stay/01 In My Bones.mp3
 /home/thunderthief/Music/The Weeknd/Beauty Behind The Madness/01 Can't Feel My Face.mp3
 /home/thunderthief/Music/Tina Guo/Wonder Woman Main Theme/01 Wonder Woman Main Theme.mp3
 /home/thunderthief/Music/Toni Braxton/Secrets/01 Un-Break My Heart.mp3
 /home/thunderthief/Music/Tony Romera/Heat Wave/01 Heat Wave.mp3
+/home/thunderthief/Music/Usha Uthup/Lucifer (Original Motion Picture Soundtrack)/01 Empurane.mp3
+/home/thunderthief/Music/Compilations/Netsuretsu! Anison Spirits the Best - Cover Music Selection - TV Anime Series _Gintama_, Vol. 2/01 Donten (ep.100-125 OP).m4a
+/home/thunderthief/Music/Vijay Prakash/KGF Chapter 1 (Telugu) (Original Motion Picture Soundtrack)/01 Salaam Rocky Bhai.mp3
 /home/thunderthief/Music/Vijay Urs, Santhosh, Arun, Mohan, Ananya Bhat, Shri Krishna, Adithya, Lokeshwar, Ganta & H. Shreenivas/KGF Chapter 1 (Telugu) [Original Motion Picture Soundtrack]/03 Evvadikevvadu Banisa.m4a
+/home/thunderthief/Music/Y3MR$/Temeraria/01 Temeraria.mp3
 /home/thunderthief/Music/Yutaka Yamada/Vinland Saga/Vinland Saga Epic OST - Battle Theme Extended.m4a

@@ -69,6 +69,7 @@ bspc rule -a URxvt state=floating
 bspc rule -a Blueman-manager state=floating
 bspc rule -a Xfce4-power-manager-settings state=floating
 bspc rule -a Software-properties-gtk state=floating
+bspc rule -a fragments state=floating
 
 bspc rule -a Brave-browser border=off
 bspc rule -a Chromium border=off

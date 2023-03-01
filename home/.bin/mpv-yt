@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-notify-send --icon=youtube "Playing video" "$(xclip -selection clipboard -o)"; mpv "$(xclip -selection clipboard -o)" &
+notify-send -e --icon=youtube "Playing video" "$(xclip -selection clipboard -o)"; mpv "$(xclip -selection clipboard -o)" &
 disown

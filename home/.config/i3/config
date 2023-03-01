@@ -135,6 +135,7 @@ for_window [class="Transmission-gtk"]             floating enable
 for_window [class="Popsicle"]                     floating enable
 for_window [class="Xfce4-power-manager-settings"] floating enable
 for_window [class="mpv"]                          floating enable
+for_window [class="fragments"]                          floating enable
 for_window [class="Brave-browser"]                focus child, layout tabbed, focus border none
 for_window [class="Chromium"]                     focus child, layout tabbed, focus border none
 for_window [class="Alacritty"]                    focus child, layout tabbed
