@@ -50,6 +50,7 @@ call plug#begin('~/.vim/autoload/plugged')
       Plug 'ntpeters/vim-better-whitespace'
       Plug 'dag/vim-fish'
       Plug 'lilydjwg/colorizer'
+      Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 
 call plug#end()
 
@@ -61,7 +62,7 @@ call plug#end()
 "autocmd BufWritePost *.vimrc !cp ~/.vimrc ~/.config/nvim/init.vim
 
 if has ('nvim')
-  colorscheme zenburn
+  colorscheme dracula
 elseif has ('gui_running')
   colorscheme nord
 else
@@ -444,6 +445,10 @@ nnoremap <leader>st :tabnew <bar> Startify<CR>
 noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 
+" vim-latex-live-preview
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer = 'evince'
+let g:livepreview_engine = 'xelatex'
 " }}}
 """""""""""""""""""""""""""""""""""""""""""""""""
 
