@@ -35,22 +35,58 @@ call plug#begin('~/.vim/autoload/plugged')
 
       "Plugins
       Plug 'vim-airline/vim-airline'
+      "Lean & mean status/tabline for vim that's light as air.
+
       Plug 'vim-airline/vim-airline-themes'
+      "A collection of themes for vim-airline
+
       Plug 'cespare/vim-toml'
+      "Vim syntax for TOML.
+
       Plug 'mhinz/vim-startify'
+      "The fancy start screen for Vim
+
       Plug 'preservim/nerdtree'
+      "A tree explorer plugin for vim
+
       Plug 'ryanoasis/vim-devicons'
+      "Adds icons to your plugins
+
       Plug 'yuttie/comfortable-motion.vim'
+      "Brings physics-based smooth scrolling to the Vim/Neovim world!
+
       Plug 'machakann/vim-highlightedyank'
+      "Make the yanked region apparent!
+
       Plug 'Yggdroot/indentLine'
+      "A vim plugin to display the indentation levels with thin vertical lines
+
       Plug 'konfekt/foldtext'
+      "Fancy fold texts
+
       Plug 'raimondi/delimitmate'
+      "Provides insert mode auto-completion of quotes, parenthesis, brackets, etc.,
+
       Plug 'tpope/vim-sensible'
+      "Defaults everyone can agree on
+
       Plug 'godlygeek/tabular'
+      "Vim script for text filtering and alignment
+
       Plug 'ntpeters/vim-better-whitespace'
+      "Better whitespace highlighting for vim
+
       Plug 'dag/vim-fish'
+      "Vim support for editing fish scripts
+
       Plug 'lilydjwg/colorizer'
+      "A Vim plugin to colorize all text in the form #rgb, #rgba, #rrggbb, #rrgbbaa, rgb(...), rgba(...)
+
       Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+      "A plugin for live previewing LaTex PDF output
+
+      Plug 'vim-latex/vim-latex'
+      "Enhanced LaTex support for vim
 
 call plug#end()
 
@@ -346,6 +382,22 @@ autocmd User Startified DisableWhitespace
 " specifies for which commands a fold will be opened
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
 
+
+" vim-latex-live-preview
+autocmd Filetype tex setl updatetime=1
+
+if system("uname") == "Darwin"
+    " Settings for macos
+    let g:livepreview_previewer = 'open -a Preview'
+
+elseif system("uname") == "Linux"
+    " Settings for Linux
+    let g:livepreview_previewer = 'evince'
+
+endif
+
+let g:livepreview_engine    = 'xelatex'
+
 " }}}
 """""""""""""""""""""""""""""""""""""""""""""""""
 " {{{ General Keybindings:
@@ -445,10 +497,8 @@ nnoremap <leader>st :tabnew <bar> Startify<CR>
 noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 
-" vim-latex-live-preview
-autocmd Filetype tex setl updatetime=1
-let g:livepreview_previewer = 'evince'
-let g:livepreview_engine = 'xelatex'
+" Latex Live-Preview
+nnoremap <leader>li :LLPStartPreview
 " }}}
 """""""""""""""""""""""""""""""""""""""""""""""""
 
