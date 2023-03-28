@@ -5,7 +5,7 @@
     highlight: bold italic;
     scrollbar: true;
     border-radius: 4px;
-    font: "UbuntuCondensed 18";
+    font: "Iosevka Regular 18";
     fixed-num-lines: false;
 }
 

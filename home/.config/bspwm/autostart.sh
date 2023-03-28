@@ -19,7 +19,7 @@ dunst &
 xfce4-power-manager &
 xfsettingsd &
 nitrogen --restore &
-volumeicon &
+sleep 5 && volumeicon &
 xautolock -time 10 -locker blurlock -corners 00-0 &
 xrdb ~/.Xresources &
 fi

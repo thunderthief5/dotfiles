@@ -2,13 +2,17 @@
  <document uri="file:///home/thunderthief/.local/share/applications/overview.desktop" atime="1676949854625">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///home/thunderthief/.config/mpv/celluloid-mpv-options" atime="1676914987473">
-  <entry key="gedit-position" value="0"/>
- </document>
  <document uri="file:///home/thunderthief/.config/celluloid/scripts/youtube-quality.lua" atime="1677462522683">
   <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-spell-language" value="en_US"/>
   <entry key="gedit-position" value="5263"/>
+ </document>
+ <document uri="file:///home/thunderthief/.aliases" atime="1677692576551">
+  <entry key="gedit-language" value="sh"/>
+  <entry key="gedit-position" value="5400"/>
+ </document>
+ <document uri="file:///home/thunderthief/.config/mpv/celluloid-mpv-options" atime="1676914987473">
+  <entry key="gedit-position" value="0"/>
  </document>
  <document uri="file:///home/thunderthief/.local/share/applications/Etcher.desktop" atime="1665716342268">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -18,9 +22,12 @@
  <document uri="file:///home/thunderthief/.local/share/applications/launchpad.desktop" atime="1676949827937">
   <entry key="gedit-position" value="0"/>
  </document>
- <document uri="file:///home/thunderthief/.aliases" atime="1677692576551">
-  <entry key="gedit-language" value="sh"/>
-  <entry key="gedit-position" value="5400"/>
+ <document uri="file:///run/media/thunderthief/My&#x25;20Data/Documents/GJC/C8&#x25;20LISA/lisa-report.tex" atime="1679351305678">
+  <entry key="gedit-position" value="8916"/>
+ </document>
+ <document uri="file:///home/thunderthief/Templates/New&#x25;20Report.tex" atime="1679966416536">
+  <entry key="gedit-encoding" value="UTF-8"/>
+  <entry key="gedit-position" value="174"/>
  </document>
  <document uri="file:///home/thunderthief/.config/mpv/scripts/osc_tethys.lua" atime="1677463520263">
   <entry key="gedit-encoding" value="UTF-8"/>
@@ -28,6 +35,10 @@
   <entry key="gedit-position" value="945"/>
  </document>
  <document uri="file:///home/thunderthief/Downloads/Passport&#x25;20renewal&#x25;20docs/arn.txt" atime="1677618434280">
+  <entry key="gedit-position" value="0"/>
+ </document>
+ <document uri="file:///home/thunderthief/Downloads/test/dracula.css" atime="1679871899692">
+  <entry key="gedit-encoding" value="UTF-8"/>
   <entry key="gedit-position" value="0"/>
  </document>
 </metadata>
