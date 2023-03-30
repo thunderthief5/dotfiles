@@ -72,6 +72,15 @@ alias dmenubar='~/.config/rofi/scripts/dmenubar'
 alias bspbar='cd .config/polybar/bspwm/ && ./launch.sh &> /dev/null && cd'
 alias opbar='cd .config/polybar/openbox/ && ./launch.sh &> /dev/null && cd'
 
+##### Anaconda   ##################
+alias conin='conda install'
+alias conup='conda update conda && conda update --all'
+alias conqr='conda search'
+alias conrm='conda remove'
+alias concl='conda clean --all'
+alias coninfo='conda info'
+alias conact='conda activate'
+alias condeact='conda deactivate'
 
 ##### MacOS Only ##################
 

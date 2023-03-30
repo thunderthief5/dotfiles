@@ -34,7 +34,7 @@ for_window [class=".*"] title_format "<span> </span>"
 
 ## Dracula
 # class                 border  bground text    indicator child_border
-client.focused          #1b1b1b #1b1b1b #6272a4 #50fa7b   #6272a4
+client.focused          #1b1b1b #9999ff #6272a4 #50fa7b   #6272a4
 client.focused_inactive #1b1b1b #282828 #6272a4 #50fa7b   #1b1b1b
 client.unfocused        #1b1b1b #2E3440 #6272a4 #50fa7b   #1b1b1b
 client.urgent           #1b1b1b #FF5555 #Fdfdfd #FF5555   #FF5555
@@ -103,7 +103,7 @@ $execute xfce4-power-manager
 $execute xautolock -time 10 -locker blurlock -corners 00-0
 $execute xsetroot -cursor_name left_ptr
 $execute ffplay -nodisp -autoexit -loglevel quiet ~/.local/share/sounds/Startup-XboxOne.mp3
-$execute volumeicon
+$execute sleep 5; volumeicon
 $execute dunst
 $execute xfsettingsd
 $execute xrdb ~/.Xresources
@@ -131,7 +131,7 @@ for_window [class="Eog"]                          floating enable
 for_window [class="URxvt"]                        floating enable
 for_window [class="Gufw.py"]                      floating enable
 for_window [class="Tor Browser"]                  floating enable border none
-for_window [class="Transmission-gtk"]             floating enable
+for_window [class="transmission-gtk"]             floating enable
 for_window [class="Popsicle"]                     floating enable
 for_window [class="Xfce4-power-manager-settings"] floating enable
 for_window [class="mpv"]                          floating enable
