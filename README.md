@@ -10,7 +10,7 @@ I use **GNU Stow** to manage my dotfiles. It is available on almost every distro
 
 ### 🔧 Installation & Setup  
 
-1️⃣ **Install Stow** using your package manager:  
+1. **Install Stow** using your package manager:  
 ```sh
 # Debian/Ubuntu
 sudo apt install stow  
@@ -22,19 +22,19 @@ sudo pacman -S stow
 sudo dnf install stow  
 ```
 
-2️⃣ **Clone this repository**:  
+2. **Clone this repository**:  
 ```sh
 git clone https://github.com/thunderthief5/dotfiles.git  
 ```
 
-3️⃣ **Use Stow to link the dotfiles**:  
+3. **Use Stow to link the dotfiles**:  
 ```sh
 cd dotfiles  
 stow -v --adopt home/
 ```
 This will place symlinks for all dotfiles in their appropriate locations inside `$HOME`.  
 
-4️⃣ **Updating dotfiles**:  
+4. **Updating dotfiles**:  
 Whenever you add new files, update the symlinks with:  
 ```sh
 stow -v --adopt --restow home/
