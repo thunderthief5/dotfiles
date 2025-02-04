@@ -1,47 +1,70 @@
-# My guide to using a tiling WM
+# My Guide to Using a Tiling WM  
 
-### Must have apps  
-While Tiling WMs are lightweight and highly configurable, they still lack a lot of functionality that comes built into most full-fledged DEs. Eg: Setting wallpapers, managing the lock screen and power management etc.  
+Tiling WMs are lightweight and highly configurable, but they lack some built-in functionality that most full-fledged DEs offer—such as setting wallpapers, managing the lock screen, and handling power management.  
 
-I use the following apps to take care of all that stuff. You may find their respective startup commands in the config files.
+I use the following apps to handle these features. Their respective startup commands can be found in the config files.  
 
-**Wallpaper Manager:** nitrogen  
-Helps you set wallpapers
+---
 
-**Compositor:** picom  
-While picom itself works great and is sufficient for most users, if you need rounded corners and blurred windows I'd suggest using picom [fork by ibhagwan](https://github.com/ibhagwan/picom).  
+## 🔧 Must-Have Apps  
 
-**Network Manager:** nm-applet  
-Gives you a wifi menu and a tray applet to configure your networks.  
+### 🖼️ **Wallpaper Manager**: `nitrogen`  
+Helps you set wallpapers.  
 
-**Power Manager:** xfce4-power-manager  
-For managing power and sleep settings, lid actions and backlight settings if you are using a laptop  
+### 🎨 **Compositor**: `picom`  
+- Provides transparency and shadows.  
+- For rounded corners and blurred windows, use the [ibhagwan fork](https://github.com/ibhagwan/picom).  
 
-**Settings Manager:** xfce4-settings   
-You can use it to configure the themes, fonts, display settings, mouse and touchpad settings etc. Start it along with your wm using `xfsettingsd` command.
+### 📶 **Network Manager**: `nm-applet`  
+Gives you a WiFi menu and a tray applet for network configuration.  
 
-**Lock Screen:** i3lock and xautolock   
-`xautolock -time 10 -locker i3lock -corners 00-0`  
-This command will set the lockscreen timer to 10 mins and will not lock the screen if the cursor is moved to the bottom left corner. Helps if you are watching a video and not want to have the screen lock suddenly.  
+### 🔋 **Power Manager**: `xfce4-power-manager`  
+Handles power, sleep settings, lid actions, and backlight adjustments (for laptops).  
 
-**Volume Manager:** volumeicon  
-Gives you a tray icon and lets you change volume using the volume keys.  
+### ⚙️ **Settings Manager**: `xfce4-settings`  
+- Configure themes, fonts, display settings, mouse, and touchpad settings.  
+- Start with:  
+  ```sh
+  xfsettingsd
+  ```
 
-**Notification daemon**: dunst  
-Takes care of notifications. 
+### 🔒 **Lock Screen**: `i3lock` + `xautolock`  
+- Start with:  
+  ```sh
+  xautolock -time 10 -locker i3lock -corners 00-0
+  ```
+- Locks the screen after **10 minutes**.  
+- Prevents locking if the cursor is in the **bottom-left corner** (useful while watching videos).  
 
-**Bar**: polybar  
-Highly configurable and looks great.
+### 🔊 **Volume Manager**: `volumeicon`  
+Provides a system tray icon and enables volume control using volume keys.  
 
-**App Launcher:** rofi  
-Its just not an app launcher. It does quite a lot of other things too. 
+### 🔔 **Notification Daemon**: `dunst`  
+Handles notifications.  
 
-**Polkit**: polkit-gnome  
-Polkit is used for controlling system-wide privileges. Helps you mount internal partitions etc. 
-Start it by putting `/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1` in your autostart scripts. The path may change depending on your distro.  
+### 📊 **Bar**: `polybar`  
+Highly configurable and visually appealing.  
 
-**Misc startup commands:**  
-`xsetroot -cursor_name left_ptr` Sets your cursor right.  
-`xrdb ~/.Xresources` If you are using xterm or rxvt-unicode, it loads their config on startup.  
+### 🚀 **App Launcher**: `rofi`  
+More than just an app launcher—it can do a lot more.  
 
-These are the packages I install on my every tiling WM setup. They are all lightweight and they add quite a lot of functionality and ease of use to the system.  
+### 🔑 **Polkit**: `polkit-gnome`  
+- Controls system-wide privileges (e.g., mounting internal partitions).  
+- Start with:  
+  ```sh
+  /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+  ```
+  *(Path may vary depending on your distro.)*  
+
+---
+
+## ⚡ Miscellaneous Startup Commands  
+
+```sh
+xsetroot -cursor_name left_ptr  # Sets your cursor correctly.  
+xrdb ~/.Xresources  # Loads xterm/rxvt-unicode config on startup.  
+```
+
+---
+
+These are the packages I install for every tiling WM setup. They are lightweight but significantly improve functionality and usability. 🚀  
