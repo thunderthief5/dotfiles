@@ -49,7 +49,7 @@ stow -v --adopt --restow home/
 ## 🚀 Frequently Used Packages  
 
 ### 💻 Desktop & Window Managers  
-- **DE:** GNOME *(for henever I want to take a break from ricing)*  
+- **DE:** GNOME *(for whenever I want to take a break from ricing)*  
 - **WM:** bspwm, i3, Openbox, Herbstluftwm, Spectrwm, DWM, Qtile, XMonad  
 
 ### ✍️ Text Editors  
