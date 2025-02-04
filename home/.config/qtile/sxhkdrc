@@ -1,0 +1,76 @@
+
+# █▀ ▀▄▀ █░█ █▄▀ █▀▄ ThunderThief
+# ▄█ █░█ █▀█ █░█ █▄▀ vim:fileencoding=utf-8:foldmethod=marker
+
+
+#### Reload sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+
+#### {{{ Custom Keybindings for Apps and scripts
+# terminal emulator
+super + Return
+	gnome-terminal
+
+super + shift + Return
+	st
+
+ctrl + alt + t
+        xterm
+
+# dmenu
+super + d
+        rofi -modi drun -show drun -display-drun ''
+super + shift + d
+        ~/.config/rofi/scripts/rofimenu
+        #dmenu_run -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=14 -p ''
+
+#window switcher
+super + w
+         rofi -modi window -show window -display-window ''
+super + shift + w
+         rofi -modi windowcd -show windowcd -display-windowcd ''
+# lockscreen
+super + 0
+        blurlock
+
+# networkmenu
+#super + n
+#        networkmenu
+
+# mpv youtube
+super + y
+        ~/.bin/mpv-yt
+
+# whiskermenu
+#super + a
+#        xfce4-popup-whiskermenu
+
+# configbrowser
+super + ctrl + b
+        ~/.config/rofi/scripts/configbrowser -v
+
+super + shift + b
+        ~/.config/rofi/scripts/configbrowser -e
+
+# redshift
+super + shift + i
+        notify-send --icon=redshift 'Redhshift is ON' && redshift -l 17.68009:83.20161 -t 3700:3700
+super + shift + u
+        pkill redshift && notify-send --icon=redshift 'Redshift is OFF'
+
+# screenshot
+Print
+        gnome-screenshot
+#        scrot ~/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png
+
+# Changing the Volume
+#XF86AudioRaiseVolume
+#    pavolume +5%
+#XF86AudioLowerVolume
+#    pavolume -5%
+#XF86AudioMute
+#    pavolume toggle
+
+#### }}}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Overview
+Comment=Show applications grid
+Exec=xdotool key super+s
+#Exec=gdbus call --session --dest org.gnome.Shell --object-path /org/gnome/Shell --method org.gnome.Shell.Eval 'Main.overview.toggle();Main.overview.viewSelector._showAppsButton.checked = true;';
+Icon=~/.icons/savings-3.png
+Path=
+Terminal=false

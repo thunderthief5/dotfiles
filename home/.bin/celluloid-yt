@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+notify-send -e --icon=youtube "Playing video" "$(xclip -selection clipboard -o)"; celluloid --new-window "$(xclip -selection clipboard -o)" &
+disown

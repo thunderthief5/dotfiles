@@ -1,0 +1,72 @@
+# █▀▄ █░█ █▄░█ █▀ ▀█▀
+# █▄▀ █▄█ █░▀█ ▄█ ░█░
+
+[global]
+
+### Display ###
+## only for debian
+#geometry      = "0x0-6+35"
+#icon_position = left
+
+width = (0, 300)
+height = 300
+origin = top-right
+offset = 5x36
+corner_radius=3
+
+progress_bar = true
+progress_bar_height = 5
+
+notification_limit = 0
+indicate_hidden = yes
+
+transparency = 0
+
+separator_height = 2
+padding = 16
+horizontal_padding = 16
+frame_width = 2
+frame_color = "#1b1b1b"
+separator_color = frame
+
+sort = yes
+idle_threshold = 120
+
+### Text ###
+
+font = Product Sans Bold 12
+line_height = 4
+markup = full
+
+format = "<b>%s</b>\n%b"
+
+alignment = left
+vertical_alignment = center
+
+ellipsize = end
+word_wrap = yes
+
+
+### Icons ###
+
+# Paths icons.
+icon_path = /usr/share/icons/Papirus-Dark/symbolic/status/:/usr/share/icons/Papirus-Dark/symbolic/devices/:/usr/share/icons/Papirus-Dark/symbolic/legacy/:/usr/share/icons/Papirus-Dark/symbolic/actions:/usr/share/icons/Papirus-Dark/16x16/actions/:/usr/share/icons/Papirus/16x16/apps
+
+### Colors ###
+
+[urgency_low]
+background = "#1b1b1b"
+foreground = "#6699ff"
+timeout = 2
+
+[urgency_normal]
+background = "#1b1b1b"
+foreground = "#6272a4"
+highlight  = "#bd93f9"
+timeout = 3
+
+[urgency_critical]
+background = "#1b1b1b"
+foreground = "#ff9999"
+frame_color = "#e3788f"
+timeout = 0

@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+# █▄▄ █░░ █░█ █▀█ █░░ █▀█ █▀▀ █▄▀
+# █▄█ █▄▄ █▄█ █▀▄ █▄▄ █▄█ █▄▄ █░█
+
+### {{{ Lock using screenshot
+# take screenshot
+#import -window root /tmp/screenshot.png
+# blur it
+#convert /tmp/screenshot.png -blur 0x5 /tmp/screenshotblur.png
+#rm /tmp/screenshot.png
+# lock the screen
+# using i3lock
+
+#i3lock -i /tmp/lock.png
+
+# using i3lock-color
+#i3lock -i /tmp/lock.png --inside-color=eceff41a --insidever-color=5e81ac1a --ring-color=2e344080 --ringwrong-color=bf616a80 --ringver-color=5e81ac80 --keyhl-color=b48ead80 --line-uses-inside --verif-font="Isonorm Monospaced"
+
+### }}}
+
+DEFAULT_IMGS="$HOME/.config/blurlock/backgrounds/1680x1050"
+
+if [[ -z $1 ]] ; then
+    img_dir=$DEFAULT_IMGS
+else
+    img_dir=$1
+fi;
+
+
+randfile=$(ls $img_dir | sort -R | head -n1)
+
+# blur it
+convert $img_dir/$randfile -blur 0x6 /tmp/blur.png
+
+# add lock icon to the center
+composite -gravity center $HOME/.config/blurlock/locks/touchid4.png /tmp/blur.png /tmp/lock.png
+
+# lock the scree nusing i3lock
+i3lock -i /tmp/lock.png
+
+# sleep 1 adds a small delay to prevent possible race conditions with suspend
+sleep 1
+
+exit 0

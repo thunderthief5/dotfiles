@@ -1,0 +1,101 @@
+#!/usr/bin/env bash
+
+# memory
+tot=$(free -h | head -2 | tail -1 | awk '{print $2}' | sed 's/Gi//g')
+use=$(free -h | head -2 | tail -1 | awk '{print $3}' | sed 's/Gi//g')
+
+Clock(){
+	date "+%H:%M"
+}
+
+Date(){
+	date "+%a %e %b"
+}
+
+Release(){
+        (lsb_release -d | awk {'print $2'} ;echo " "; lsb_release -r | awk {'print $2'}) | tr -d '\n'
+}
+
+Kernel(){
+	uname -r
+}
+
+
+Host(){
+	echo $HOSTNAME
+}
+
+User(){
+	echo $USER
+}
+
+WM(){
+	echo "$GDMSESSION"
+}
+
+Bat0(){
+	cat /sys/class/power_supply/BAT0/capacity
+}
+
+Bat1(){
+	cat /sys/class/power_supply/BAT1/capacity
+}
+
+Packages(){
+	if [[ $(command -v pacman) ]]; then
+		pacman -Q | wc -l
+	elif [[ $(command -v dpkg-query) ]]; then
+		dpkg-query -l | grep -c '^.i'
+	elif [[ $(command -v rpm) ]]; then
+		rpm -qa | wc -l
+	elif [[ $(command -v eopkg) ]]; then
+		eopkg list-installed | wc -l
+	elif [[ $(command -v xbps-query) ]]; then
+                xbps-query -l | wc -l
+        else
+		echo not found
+	fi
+}
+
+Flatpaks(){
+	if [[ $(command -v flatpak) ]]; then
+        	flatpak list | wc -l
+	else
+		echo not found
+	fi	
+}
+
+
+Uptime(){
+	uptime --pretty | sed -e 's/up//;s/^ *//'
+}
+
+CPU(){
+	awk -F: '/model name/{print $2 ; exit}' /proc/cpuinfo | sed 's/\<Processor\>//g;s/^ *//' | tr -d '\n'
+}
+
+
+RAM(){
+       echo "${use}/${tot}G"
+}
+
+WIFI(){
+       iw dev | grep ssid | awk '{print $2}'
+}
+
+Resolution(){
+      xrandr --nograb --current | awk 'match($0,/[0-9]*\.[0-9]*\*/) {printf $1 " @ " substr($0,RSTART,RLENGTH) "Hz "}'
+}
+
+
+echo -e "$(Clock) $(Date)
+$(Host)
+$(Release)
+$(Kernel)
+$(Packages) (pkgs), $(Flatpaks) (flatpaks)
+$(WM)
+$(Uptime)
+$(RAM)
+$(CPU)
+$(Resolution)
+Main $(Bat0)%, Bay $(Bat1)%" | rofi -dmenu -p $USER

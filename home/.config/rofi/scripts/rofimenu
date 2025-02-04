@@ -1,0 +1,142 @@
+#!/usr/bin/env bash
+
+# Dmenu script for editing some of my more frequently edited config files.
+
+#rofi_command="rofi -config ~/.config/rofimono.conf -font "Hermit Bold Italic 24""
+
+declare options=("configbrowser
+bspwm
+i3
+openbox
+polybar
+rofi-drun
+dmenu
+powermenu
+rofifetch
+quit")
+
+declare options2=("restart-sxhkd
+restart-bspwm
+exit-bspwm
+")
+
+declare options3=("openbox-reconfigure
+openbox-exit
+")
+
+declare options4=("bspbar
+i3bar
+opbar
+")
+
+declare options5=("configviewer
+configeditor
+")
+
+declare options6=("reload-i3-config
+restart-i3
+exit-i3
+")
+
+choice=$(echo -e "${options[@]}" | rofi -dmenu -p '#++')
+
+case "$choice" in
+	
+	rofi-drun)
+		rofi -modi drun -show drun -display-drun ''
+	;;	
+        
+        configbrowser)
+		choice=$(echo -e "${options5[@]}" | rofi -dmenu -p 'configbrowser')
+		       case "$choice" in
+			     configviewer)
+                        	${0%/*}/configbrowser -v
+		              ;;
+	                     configeditor)
+		                ${0%/*}/configbrowser -e
+		              ;;
+		              *)
+		        exit 1
+		        ;;
+                        esac
+	
+	;;
+	
+	rofifetch)
+		${0%/*}/rofifetch
+	;;
+	
+	bspwm)
+                choice=$(echo -e "${options2[@]}" | rofi -dmenu -p 'bspwm')
+                        case "$choice" in
+	                      restart-sxhkd)
+		                     pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config' 
+		              ;;
+	                      restart-bspwm)
+		                     bspc wm -r
+		              ;;
+		              exit-bspwm)
+		              	     bspc quit
+		              ;;
+	                      *)
+		        exit 1
+		        ;;
+                        esac
+        ;;
+	
+	i3)
+                choice=$(echo -e "${options6[@]}" | rofi -dmenu -p 'i3')
+                        case "$choice" in
+	                      reload-i3-config)
+		                     i3-msg reload;exec notify-send "Reloaded i3 config" 
+		              ;;
+	                      restart-i3)
+		                     i3-msg restart
+		              ;;
+		              exit-i3)
+		              	     i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'
+		              ;;
+	                      *)
+		        exit 1
+		        ;;
+                        esac
+        ;;
+        
+	openbox)
+		 choice=$(echo -e "${options3[@]}" | rofi -dmenu -p 'openbox')
+
+                        case "$choice" in                              
+                              openbox-reconfigure)
+                                     openbox --reconfigure
+                              ;;
+		              openbox-exit)
+				     openbox --exit
+			      ;;     
+                              *)
+                        exit 1
+                        ;;
+                        esac
+        
+	;;
+	
+	polybar)
+		 ~/.config/polybar/launch.sh && notify-send "Re-Loaded Bars"
+        
+	;;
+	
+	powermenu)
+		${0%/*}/powermenu
+	;;
+	
+	dmenu)
+		dmenu_run -nb '#1b1b1b' -nf '#6272a4' -sb '#50fa7b' -sf '#1b1b1b' -fn Iosevka:size=16
+	;;
+	
+	quit)
+		echo "Program terminated." && exit 1
+	;;
+	*)
+		exit 1
+	;;
+esac
+

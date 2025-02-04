@@ -1,0 +1,43 @@
+foreground #102015
+background #f9f9f9
+
+color0 #000000
+color8 #343434
+
+#: black
+
+color1 #e92f2f
+color9 #e92f2f
+
+#: red
+
+color2  #0ed839
+color10 #0ed839
+
+#: green
+
+color3  #dddd13
+color11 #dddd13
+
+#: yellow
+
+color4  #3b48e3
+color12 #3b48e3
+
+#: blue
+
+color5  #f996e2
+color13 #f996e2
+
+#: magenta
+
+color6  #23edda
+color14 #23edda
+
+#: cyan
+
+color7  #000000
+color15 #000000
+
+#: white
+

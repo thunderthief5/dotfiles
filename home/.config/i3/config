@@ -1,0 +1,364 @@
+
+# ░▀░ █▀▀█ ░░ █▀▀▀ █▀▀█ █▀▀█ █▀▀ ThunderThief
+# ▀█▀ ░░▀▄ ▀▀ █░▀█ █▄▄█ █░░█ ▀▀█ vim:fileencoding=utf-8:foldmethod=marker
+# ▀▀▀ █▄▄█ ░░ ▀▀▀▀ ▀░░▀ █▀▀▀ ▀▀▀
+
+### {{{ Basic Settings
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+set $mod Mod4
+set $execute exec --no-startup-id
+
+# set default desktop layout (default is tiling)
+# workspace_layout tabbed <stacking|tabbed>
+
+# Configure border style <normal|1pixel|pixel xx|none|pixel>
+new_window pixel 2
+new_float normal
+
+# Hide borders
+hide_edge_borders none
+
+# change borders
+bindsym $mod+u border none
+bindsym $mod+i border pixel 2
+bindsym $mod+n border normal
+
+# Font for window titles.
+font xft:Iosevka Bold 5
+for_window [class=".*"] title_format "<span> </span>"
+
+
+### }}}
+
+### {{{ i3-colors
+
+## Dracula
+# class                 border  bground text    indicator child_border
+client.focused          #1b1b1b #9999ff #6272a4 #50fa7b   #6272a4
+client.focused_inactive #1b1b1b #282828 #6272a4 #50fa7b   #1b1b1b
+client.unfocused        #1b1b1b #2E3440 #6272a4 #50fa7b   #1b1b1b
+client.urgent           #1b1b1b #FF5555 #Fdfdfd #FF5555   #FF5555
+client.placeholder      #282a36 #282a36 #Fdfdfd #282A36   #1b1b1b
+
+client.background       #F8F8F2
+
+## Nord
+# class                 border  bground text    indicator child_border
+#client.focused          #2e3440 #2e3440 #81a1c1 #81a1c1   #eceff4
+#client.focused_inactive #2e3440 #4C566A #eceff4 #81a1c1   #2e3440
+#client.unfocused        #2e3440 #4C566A #eceff4 #81a1c1   #2e3440
+#client.urgent           #2e3440 #bf616a #eceff4 #bf616a   #bf616a
+#client.placeholder      #282a36 #282a36 #eceff4 #282A36   #2e3440
+#
+#client.background       #F8F8F2
+
+
+
+### }}}
+
+### {{{ Applications
+
+# {{{ Launch applications
+# start a Terminal
+set $myTerm gnome-terminal
+
+bindsym $mod+Return       exec $myTerm
+bindsym Mod1+Ctrl+t       exec xterm
+bindsym $mod+Shift+Return exec st
+
+# start Rofi
+bindsym $mod+d       $execute rofi -modi drun -show drun -display-drun 'Apps'
+bindsym $mod+w       $execute rofi -modi window -show window -display-window ''
+bindsym $mod+Shift+w $execute rofi -modi window -show windowcd -display-windowcd ''
+bindsym $mod+Shift+d $execute ~/.config/rofi/scripts/rofimenu
+bindsym $mod+b       $execute ~/.config/rofi/scripts/configbrowser -v
+bindsym $mod+Shift+b $execute ~/.config/rofi/scripts/configbrowser -e
+
+# mpv-yt
+bindsym $mod+y $execute ~/.bin/mpv-yt
+
+# Screenshot
+bindsym Print  $execute gnome-screenshot
+
+# redshift
+bindsym $mod+Shift+i exec notify-send --icon=redshift 'Redhshift is ON' && redshift -l 17.68009:83.20161 -t 3700:3700 # -g 0.5
+bindsym $mod+Shift+u exec pkill redshift && notify-send --icon=redshift 'Redshift is OFF'
+
+# Screen brightness controls
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
+# }}}
+
+# {{{ Autostart applications
+
+$execute $HOME/.config/polybar/launch.sh
+$execute /usr/libexec/polkit-gnome-authentication-agent-1
+$execute /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+$execute /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+$execute nitrogen --restore
+$execute sleep 1; picom
+$execute nm-applet
+$execute xfce4-power-manager
+$execute xautolock -time 10 -locker blurlock -corners 00-0
+$execute xsetroot -cursor_name left_ptr
+$execute ffplay -nodisp -autoexit -loglevel quiet ~/.local/share/sounds/Startup-XboxOne.mp3
+$execute sleep 5; volumeicon
+$execute dunst
+$execute xfsettingsd
+$execute xrdb ~/.Xresources
+
+# }}}
+
+# {{{ Window rules for applications
+
+# Open applications on specific workspaces
+# assign [class="Thunderbird"] $ws1
+# assign [class="Firefox"] $ws2
+# assign [class="Pcmanfm"] $ws3
+
+# Open specific applications in floating mode
+
+for_window [title="alsamixer"]                    floating enable border pixel 1
+for_window [class="Clipgrab"]                     floating enable
+for_window [title="File Transfer*"]               floating enable
+for_window [class="Lxappearance"]                 floating enable sticky enable border normal
+for_window [class="Nitrogen"]                     floating enable sticky enable border normal
+for_window [class="Pavucontrol"]                  floating enable
+for_window [class="Network Connections"]          floating enable
+for_window [class="Nm-connection-editor"]         floating enable
+for_window [class="Eog"]                          floating enable
+for_window [class="URxvt"]                        floating enable
+for_window [class="Gufw.py"]                      floating enable
+for_window [class="Tor Browser"]                  floating enable border none
+for_window [class="transmission-gtk"]             floating enable
+for_window [class="Popsicle"]                     floating enable
+for_window [class="Xfce4-power-manager-settings"] floating enable
+for_window [class="mpv"]                          floating enable
+for_window [class="fragments"]                          floating enable
+for_window [class="Brave-browser"]                focus child, layout tabbed, focus border none
+for_window [class="Chromium"]                     focus child, layout tabbed, focus border none
+for_window [class="Alacritty"]                    focus child, layout tabbed
+for_window [class="XTerm"]                        focus child, layout tabbed
+
+# }}}
+
+### }}}
+
+### {{{ Window Manager
+
+# {{{ Windows
+
+# Use Mouse+$mod to drag floating windows
+floating_modifier $mod
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# focus_follows_mouse no
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the arrow keys:
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the arrow keys:
+bindsym $mod+Shift+Left  move left
+bindsym $mod+Shift+Down  move down
+bindsym $mod+Shift+Up    move up
+bindsym $mod+Shift+Right move right
+
+# split orientation
+bindsym $mod+x split h;exec notify-send 'tile horizontally'
+bindsym $mod+v split v;exec notify-send 'tile vertically'
+bindsym $mod+z split toggle
+
+# toggle fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking;exec notify-send 'Stacking'
+bindsym $mod+Shift+s layout tabbed;exec notify-send 'Tabbing'
+bindsym $mod+t layout toggle split;exec notify-send 'Splitting'
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle;exec notify-send 'Floating'
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# move window to center
+bindsym $mod+c move absolute position center
+
+# {{{ Resize window
+
+#  you can also use the mouse for that
+
+bindsym $mod+r mode "[Resize]"
+mode "[Resize]" {
+        # Originally set to jkl;.
+        # These bindings trigger as soon as you enter the resize mode
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 4 px or 4 ppt
+        bindsym j resize grow height 4 px or 4 ppt
+        bindsym k resize shrink height 4 px or 4 ppt
+        bindsym l resize grow width 4 px or 4 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 2 px or 2 ppt
+        bindsym Down resize grow height 2 px or 2 ppt
+        bindsym Up resize shrink height 2 px or 2 ppt
+        bindsym Right resize grow width 2 px or 2 ppt
+
+        # exit resize mode: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+# }}}
+
+# }}}
+
+# {{{ Workspaces
+
+# Workspace names
+# to display names or symbols instead of plain workspace numbers you can use
+# something like: set $ws1 1:mail
+#                 set $ws2 2:
+set $ws1 1
+set $ws2 2
+set $ws3 3
+set $ws4 4
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+
+# Move focused container to workspace
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+
+# Move to workspace with focused container
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+
+#navigate workspaces next / previous
+bindsym $mod+Ctrl+Right workspace next
+bindsym $mod+Ctrl+Left workspace prev
+
+# workspace back and forth (with/without active container)
+workspace_auto_back_and_forth no
+bindsym $mod+Tab workspace back_and_forth
+bindsym $mod+Shift+Tab move container to workspace back_and_forth; workspace back_and_forth
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
+
+# }}}
+
+### }}}
+
+### {{{ Session settings
+
+# Lock screen
+bindsym $mod+0 $execute blurlock
+
+# reload the configuration file
+bindsym $mod+Ctrl+r reload;exec notify-send "Reloaded i3 config"
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+### }}}
+
+### {{{ i3-gaps
+
+# Set inner/outer gaps
+gaps inner 6
+gaps outer 0
+
+workspace $ws3 gaps inner 10
+workspace $ws4 gaps inner 36
+
+# Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
+# gaps inner|outer current|all set|plus|minus <px>
+# gaps inner all set 10
+# gaps outer all plus 5
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+#smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+# Press $mod+Shift+g to enter the gap mode. 
+# Choose o or i for modifying outer/inner gaps.
+# Press one of + / - (in-/decrement for current workspace) 
+# or 0 (remove gaps for current workspace). If you also press Shift 
+# with these keys, the change will be global for all workspaces.
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+### }}}

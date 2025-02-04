@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+# Dmenu script for editing some of my more frequently edited config files.
+
+#rofi_command="rofi -config ~/.config/rofimono.conf -font "Hermit Bold Italic 24""
+
+declare options=("i3
+bspwm
+openbox
+polybar
+vim
+picom
+Xresources
+quit
+")
+
+declare options2=("bspwmrc
+sxhkdrc
+")
+
+declare options3=("Config
+Modules
+")
+
+choice=$(echo -e "${options[@]}" | rofi -dmenu -p 'ConfigBrowser')
+
+case "$choice" in
+	quit)
+		echo "Program terminated." && exit 1
+	;;	
+        openbox)
+		choice="$HOME/.config/openbox/rc.xml"
+	;;
+	i3)
+		choice="$HOME/.config/i3/config"
+	;;
+	bspwm)
+                choice=$(echo -e "${options2[@]}" | rofi -dmenu -p 'bspwm ')
+                        case "$choice" in
+	                      bspwmrc)
+		                     choice="$HOME/.config/bspwm/bspwmrc"
+		              ;;
+	                      sxhkdrc)
+		                     choice="$HOME/.config/sxhkd/sxhkdrc"
+		              ;;
+	                      *)
+		        exit 1
+		        ;;
+                        esac
+        ;;
+	polybar)
+		 choice=$(echo -e "${options3[@]}" | rofi -dmenu -p 'polybar')
+
+                        case "$choice" in                              
+                              Config)
+                                     choice="$HOME/.config/polybar/config.ini"
+                              ;; 
+                              Modules)
+				     choice="$HOME/.config/polybar/modules.ini"
+			      ;;
+		              *)
+                        exit 1
+                        ;;
+                        esac
+        
+	;;
+	vim)
+		choice="$HOME/.vimrc"
+	;;
+        
+        Xresources)
+		choice="$HOME/.Xresources"
+	;;
+        picom)
+		choice="$HOME/.config/picom/picom.conf"
+	;;
+	*)
+		exit 1
+	;;
+esac
+
+Terminal=urxvt
+
+while getopts ve option
+   do
+   case "${option}" in
+      v) if command -v batcat 2>&1 >/dev/null; then
+		$Terminal -e batcat "$choice"
+	 else
+		$Terminal -e bat "$choice"
+	 fi;;
+      e) $Terminal -e vim "$choice";;
+   esac
+done
+
+#if command -v batcat 2>&1 >/dev/null; then
+#urxvt -e batcat "$choice"
+#else
+#urxvt -e bat "$choice"
+#fi

@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+
+rofi_command="rofi -dmenu -p PowerMenu"
+
+### Options ###
+power_off="Poweroff"
+reboot="Reboot"
+lock="Lock"
+suspend="Suspend"
+# Variable passed to rofi
+options="$lock\n$suspend\n$reboot\n$power_off\n"
+
+chosen="$(echo -e "$options" | $rofi_command -dmenu)"
+case $chosen in
+    $power_off)
+      if [[ $(command -v systemctl) ]]; then
+        systemctl poweroff
+      elif [[ $(command -v loginctl) ]]; then
+         loginctl poweroff
+      else
+         notify-send 'command not found'
+      fi
+        ;;
+    $reboot)
+      if [[ $(command -v systemctl) ]]; then
+         systemctl reboot
+      elif [[ $(command -v loginctl) ]]; then
+         loginctl reboot
+      else
+         notify-send 'command not found'
+      fi
+        ;;
+    $lock)
+	blurlock && sleep 1
+        ;;
+    $suspend)
+      if [[ $(command -v systemctl) ]]; then
+         blurlock && sleep 1 && systemctl suspend
+      elif [[ $(command -v loginctl) ]]; then
+         blurlock && sleep 1 && loginctl suspend
+      else
+         notify-send 'command not found'
+      fi
+              ;;
+esac
+
