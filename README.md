@@ -1,5 +1,3 @@
-Here's an improved version of your `README.md` with better structure, clarity, and formatting:
-
 ---
 
 # ⚡ ThunderThief's Dotfiles  
