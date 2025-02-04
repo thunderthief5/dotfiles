@@ -1,14 +1,14 @@
-# ⚡ ThunderThief's Dotfiles  
+# ThunderThief's Dotfiles  
 
 A personal collection of dotfiles managed with `stow`, making configuration management easy and efficient.  
 
 ---
 
-## 📂 Organizing Dotfiles with GNU Stow  
+## Organizing Dotfiles with GNU Stow  
 
 I use **GNU Stow** to manage my dotfiles. It is available on almost every distro. It creates symbolic links, ensuring all configurations stay organized and easily restorable across systems.  
 
-### 🔧 Installation & Setup  
+### Installation & Setup  
 
 1. **Install Stow** using your package manager:  
 ```sh
@@ -42,27 +42,27 @@ stow -v --adopt --restow home/
 
 ---
 
-## 🚀 Frequently Used Packages  
+## Frequently Used Packages  
 
-### 💻 Desktop & Window Managers  
+### Desktop & Window Managers  
 - **DE:** GNOME *(for whenever I want to take a break from ricing)*  
 - **WM:** bspwm, i3, Openbox, Herbstluftwm, Spectrwm, DWM, Qtile, XMonad  
 
-### ✍️ Text Editors  
+### Text Editors  
 - **vim**, **neovim**, **gedit**  
 
-### 🖥️ Terminal & Shell  
+### Terminal & Shell  
 - **Terminal Emulator:** GNOME Terminal, rxvt-unicode, xterm, alacritty  
 - **Shell:** Bash, Zsh, Fish  
 - **Shell Prompt:** [Starship](https://starship.rs/)  
 
-### 🔔 UI & Workflow Enhancements  
+### UI & Workflow Enhancements  
 - **Notification Daemon:** dunst  
 - **Dock:** Plank  
 - **Bar:** Polybar  
 - **App Launcher:** Rofi  
 
-### 🎵 Multimedia  
+### Multimedia  
 - **Media Player:** mpv  
 
 ---
