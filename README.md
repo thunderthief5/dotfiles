@@ -1,5 +1,3 @@
----
-
 # ⚡ ThunderThief's Dotfiles  
 
 A personal collection of dotfiles managed with `stow`, making configuration management easy and efficient.  
