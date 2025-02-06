@@ -29,7 +29,7 @@ SERVICES=(
     "audiobookshelf" "code-server" "dash" "dozzle"
     "gitea" "hoarder" "homarr" "immich" "it-tools"
     "Kavita" "memos" "paperless-ngx" "portainer" "seafile"
-    "searxng" "stirling-pdf"
+    "searxng" "speedtest-tracker" "stirling-pdf"
 )
 
 # Base directory where the services are located
