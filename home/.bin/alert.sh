@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Replace with your actual token and chat ID
-token="replace with token"
-chat="id"
+token="7900860977:AAFMZMVUsQ2G2MDWMEUfVGFYWxra_HGLWTY"
+chat="7637009568"
 
 event="$1"
 

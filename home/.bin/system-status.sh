@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Telegram bot token and chat ID
-token="replace with token"
-chat="id"
+TOKEN="7900860977:AAFMZMVUsQ2G2MDWMEUfVGFYWxra_HGLWTY"
+CHAT_ID="7637009568"
 
 # Gather system information
 HOSTNAME=$(hostname)

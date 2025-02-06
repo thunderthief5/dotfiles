@@ -27,7 +27,7 @@
 # Define the service directories
 SERVICES=(
     "audiobookshelf" "code-server" "dash" "dozzle"
-    "gitea" "hoarder" "homarr" "immich"
+    "gitea" "hoarder" "homarr" "immich" "it-tools"
     "Kavita" "memos" "paperless-ngx" "portainer" "seafile"
     "searxng" "stirling-pdf"
 )
