@@ -25,11 +25,25 @@
 # Date: [05-Feb-25]
 
 # Define the service directories
+
 SERVICES=(
-    "audiobookshelf" "code-server" "dash" "dozzle"
-    "gitea" "hoarder" "homarr" "immich" "it-tools"
-    "Kavita" "memos" "paperless-ngx" "portainer" "seafile"
-    "searxng" "speedtest-tracker" "stirling-pdf"
+    "audiobookshelf"
+    "code-server"
+    "dash"
+    "dozzle"
+    "forgejo"
+    "hoarder"
+    "homarr"
+    "immich"
+    "it-tools"
+    "Kavita"
+    "memos"
+    "paperless-ngx"
+    "portainer"
+    "seafile"
+    "searxng"
+    "speedtest-tracker"
+    "stirling-pdf"
 )
 
 # Base directory where the services are located
