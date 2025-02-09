@@ -30,6 +30,7 @@ SERVICES=(
     "audiobookshelf"
     "code-server"
     "dash"
+    "excalidraw"
     "forgejo"
     "hoarder"
     "homarr"
