@@ -16,10 +16,11 @@ error_symbol   = "[](bold red)"
 vicmd_symbol   = "[\ue62b](bold blue)"
 
 [hostname]
-ssh_only = false
-format   = "on [$hostname](bold italic red) "
+ssh_only = true
+format   = "on [$ssh_symbol $hostname](bold italic red) "
 trim_at  = ".local"
-disabled = true
+disabled = false
+ssh_symbol = 'SSH'
 
 [username]
 style_user  = "bold italic cyan"
@@ -64,3 +65,27 @@ modified   = "[ MOD ](bold purple)"
 staged     = '[ STAG  \($count\) ](bold cyan)'
 renamed    = "[ REN ](bold cyan)"
 deleted    = "[ DEL ](bold red)"
+
+[conda]
+format = "[$symbol $environment](bold red)"
+
+
+[cmd_duration]
+format = ' took [$duration](yellow)'
+
+[shell]
+bash_indicator = 'BASH'
+zsh_indicator  = 'ZSH'
+fish_indicator = 'FISH'
+powershell_indicator = '_'
+unknown_indicator = 'mystery shell'
+style = 'red bold'
+disabled = false
+
+
+[docker_context]
+format = 'via [🐋 $context](blue bold)'
+
+[custom.timeout]
+# Ignore global command_timeout setting and keep running external commands, no matter how long they take.
+ignore_timeout = true
