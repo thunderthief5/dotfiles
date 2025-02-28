@@ -17,7 +17,7 @@ vicmd_symbol   = "[\ue62b](bold blue)"
 
 [hostname]
 ssh_only = true
-format   = "on [$ssh_symbol $hostname](bold italic red) "
+format   = "on [$ssh_symbol $hostname](bold red) "
 trim_at  = ".local"
 disabled = false
 ssh_symbol = 'SSH'
@@ -46,11 +46,12 @@ truncation_length = 6
 truncation_symbol = ""
 
 [git_commit]
-commit_hash_length = 4
+commit_hash_length = 6
 tag_symbol = " "
 
 [git_metrics]
 added_style = "bold blue"
+deleted_style = "bold red"
 format = '[+$added]($added_style)/[-$deleted]($deleted_style) '
 
 [git_status]
@@ -87,5 +88,9 @@ disabled = false
 format = 'via [🐋 $context](blue bold)'
 
 [custom.timeout]
-# Ignore global command_timeout setting and keep running external commands, no matter how long they take.
 ignore_timeout = true
+
+[python]
+symbol = 'PY'
+format = '[$symbol $version ($virtualenv)](bold green) '
+disabled = false
